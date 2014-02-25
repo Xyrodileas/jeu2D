@@ -157,9 +157,9 @@
       <file leaf-file-name="Jeu.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Jeu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="67" selection-start="1579" selection-end="1579" vertical-scroll-proportion="0.4292566" vertical-offset="637" max-vertical-offset="1173">
+            <state line="46" column="38" selection-start="1526" selection-end="1526" vertical-scroll-proportion="0.6522782" vertical-offset="510" max-vertical-offset="1292">
               <folding>
-                <element signature="e#148#156#0" expanded="true" />
+                <element signature="e#150#158#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -499,12 +499,12 @@
       <created>1392997619382</created>
       <updated>1392997619382</updated>
       <workItem from="1392997626134" duration="706000" />
-      <workItem from="1393362694785" duration="6716000" />
+      <workItem from="1393362694785" duration="6965000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7422000" />
+    <option name="totallyTimeSpent" value="7671000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="3" width="1364" height="726" extended-state="0" />
@@ -665,9 +665,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Jeu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="67" selection-start="1579" selection-end="1579" vertical-scroll-proportion="0.4292566" vertical-offset="637" max-vertical-offset="1173">
+        <state line="46" column="38" selection-start="1526" selection-end="1526" vertical-scroll-proportion="0.6522782" vertical-offset="510" max-vertical-offset="1292">
           <folding>
-            <element signature="e#148#156#0" expanded="true" />
+            <element signature="e#150#158#0" expanded="true" />
           </folding>
         </state>
       </provider>
