@@ -2,14 +2,14 @@ public class Jeu {
 
   private Integer nbrTours;
 
-    public CollectionJoueur ListeJoueurs;
+    public CollectionJoueur<Joueur> ListeJoueurs = new CollectionJoueur<Joueur>();
 
   public void calculScoreTours() {
 
-      for(iterateurJoueur i = ListeJoueurs.iterateur(); i.nextJoueur();){
-          int[] resultat = new int[i.getJoueur().nbrDes()];
+      for(Joueur i : ListeJoueurs){
+          int[] resultat = new int[i.nbrDes()];
           //int[] resultat = new int[3];
-          for(iterateurDe d = i.getJoueur().)
+         // for(iterateurDe d = i.getJoueur().)
 
       }
   }

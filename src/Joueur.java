@@ -7,4 +7,10 @@ public class Joueur {
     public Vector  myCollectionJoueur;
     public Vector  myFabriqueJoueur;
 
+    public Joueur(){
+
+    }
+    public int nbrDes(){
+        return 3; //TODO Implenter le comportement
+    }
 }

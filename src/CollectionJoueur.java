@@ -1,7 +1,7 @@
 import java.util.Iterator;
 import java.util.Vector;
 
-public class CollectionJoueur<Joueur> implements Iterator<Joueur> {
+public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 
   public Vector<Joueur> ListeJoueur;
   private iterateurJoueur iterateurJoueurs;
@@ -13,19 +13,27 @@ public class CollectionJoueur<Joueur> implements Iterator<Joueur> {
   public void ajouterJoueur(Joueur joueur) {
   }
 
-    //Méthodes à implémenter
-    @Override
-    public boolean hasNext() {
-        return false;
-    }
 
     @Override
-    public Joueur next() {
-        return null;
-    }
+    public Iterator<Joueur> iterator() {
+        return new Iterator<Joueur>() {
 
-    @Override
-    public void remove() {
+            private int currentIndex = 0;
 
+            @Override
+            public boolean hasNext() {
+                return true;
+            }
+
+            @Override
+            public Joueur next() {
+                return (Joueur)FabriqueJoueur.nouveauJoueur();
+            }
+
+            @Override
+            public void remove() {
+                // TODO Auto-generated method stub
+            }
+        };
     }
 }

@@ -5,8 +5,8 @@ public class FabriqueJoueur {
     public Vector  myCollectionJoueur;
     public Vector  myJoueur;
 
-  public Joueur FabriqueJoueur() {
-  return null;
+  public static Joueur nouveauJoueur() {
+  return new Joueur();
   }
 
 }
