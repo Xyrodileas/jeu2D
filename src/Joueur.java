@@ -19,6 +19,10 @@ public class Joueur implements Comparable{
         return this.ListeDes;
     }
 
+    public int getScore(){
+        return score;
+    }
+
         @Override //TODO Implémenter méthodes de l'interface
         public int compareTo(Object o) {
             return 0;

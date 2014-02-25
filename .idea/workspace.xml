@@ -100,10 +100,12 @@
       <file leaf-file-name="Joueur.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Joueur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="42" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+            <state line="21" column="25" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="612">
               <folding>
                 <element signature="e#400#401#0" expanded="true" />
                 <element signature="e#436#437#0" expanded="true" />
+                <element signature="e#464#465#0" expanded="true" />
+                <element signature="e#492#493#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -157,7 +159,7 @@
       <file leaf-file-name="Jeu.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Jeu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="38" selection-start="1526" selection-end="1526" vertical-scroll-proportion="0.6522782" vertical-offset="510" max-vertical-offset="1292">
+            <state line="64" column="0" selection-start="2288" selection-end="2288" vertical-scroll-proportion="2.6091127" vertical-offset="0" max-vertical-offset="1411">
               <folding>
                 <element signature="e#150#158#0" expanded="true" />
               </folding>
@@ -499,12 +501,12 @@
       <created>1392997619382</created>
       <updated>1392997619382</updated>
       <workItem from="1392997626134" duration="706000" />
-      <workItem from="1393362694785" duration="6965000" />
+      <workItem from="1393362694785" duration="7335000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7671000" />
+    <option name="totallyTimeSpent" value="8041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="3" width="1364" height="726" extended-state="0" />
@@ -655,17 +657,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Joueur.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="42" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+        <state line="21" column="25" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="612">
           <folding>
             <element signature="e#400#401#0" expanded="true" />
             <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Jeu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="38" selection-start="1526" selection-end="1526" vertical-scroll-proportion="0.6522782" vertical-offset="510" max-vertical-offset="1292">
+        <state line="64" column="0" selection-start="2288" selection-end="2288" vertical-scroll-proportion="2.6091127" vertical-offset="0" max-vertical-offset="1411">
           <folding>
             <element signature="e#150#158#0" expanded="true" />
           </folding>

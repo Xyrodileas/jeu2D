@@ -45,10 +45,10 @@ public class Jeu {
 
     // Permet de réaliser un lancé de chaque dés possédé par le joueur
     private int[] lancerLesDes(Joueur leJoueur) {
-        int[] resultat = new int[leJoueur.nbrDes()];
+        int[] resultat = new int[leJoueur.nbrDes()]; // Variable servant à stocké le resultat des lancés
         int index = 0;
-        for(Iterator<De> d = leJoueur.getListeDes().iterator(); d.hasNext(); index++){
-            resultat[index] = d.next().LancerDe();
+        for(Iterator<De> d = leJoueur.getListeDes().iterator(); d.hasNext(); index++){ //On parcours chacun des dés du joueur
+            resultat[index] = d.next().LancerDe(); //On lance le dés, puis on stock le résultat du lancé
         }
         return resultat;
     }
@@ -57,7 +57,7 @@ public class Jeu {
     public int resultatSansBrunco(int[] lancers){
         int score = 0;
         for(int x : lancers){
-            if(x == nbrTours){
+            if(x == nbrTours){ //Si le lancé du dés correspond au numéro du tours, on ajoute un point
                 score += 1;
             }
         }
@@ -65,7 +65,14 @@ public class Jeu {
 
     }
 
-    public void calculerLeVainqueur() {
+    public Joueur calculerLeVainqueur() {
+        Joueur gagnant = null;
+        for(Joueur i : ListeJoueurs){
+            if(gagnant == null || i.getScore() > gagnant.getScore()){
+                gagnant = i;
+            }
+        }
+        return gagnant;
     }
 
 }
