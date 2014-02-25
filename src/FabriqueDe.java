@@ -5,8 +5,8 @@ public class FabriqueDe {
     public Vector  myDe;
     public Vector  myCollectionDes;
 
-  public De FabriqueDe() {
-  return null;
+  public static De FabriqueDe() {
+  return new De();
   }
 
 }

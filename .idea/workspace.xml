@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="039ebb89-90e1-4819-b39e-b3e28bbd2eec" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CollectionJoueur.java" afterPath="$PROJECT_DIR$/src/CollectionJoueur.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FabriqueJoueur.java" afterPath="$PROJECT_DIR$/src/FabriqueJoueur.java" />
+      <change type="DELETED" beforePath="C:\Users\Alexis\Documents\GitHub\jeu2D\src\Comparable.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CollectionDes.java" afterPath="$PROJECT_DIR$/src/CollectionDes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/De.java" afterPath="$PROJECT_DIR$/src/De.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FabriqueDe.java" afterPath="$PROJECT_DIR$/src/FabriqueDe.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Jeu.java" afterPath="$PROJECT_DIR$/src/Jeu.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Joueur.java" afterPath="$PROJECT_DIR$/src/Joueur.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -76,7 +78,7 @@
       <file leaf-file-name="CollectionDes.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CollectionDes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+            <state line="33" column="13" selection-start="850" selection-end="850" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="714">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,7 +89,7 @@
       <file leaf-file-name="CollectionJoueur.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CollectionJoueur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="748">
+            <state line="3" column="38" selection-start="91" selection-end="118" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,8 +100,11 @@
       <file leaf-file-name="Joueur.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Joueur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="38" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-              <folding />
+            <state line="21" column="1" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+              <folding>
+                <element signature="e#250#251#0" expanded="true" />
+                <element signature="e#286#287#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -131,15 +136,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Comparable.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Comparable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="iterateurDe.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/iterateurDe.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -149,21 +145,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="De.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="De.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/De.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="10" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+            <state line="9" column="0" selection-start="142" selection-end="142" vertical-scroll-proportion="0.43589744" vertical-offset="0" max-vertical-offset="442">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Jeu.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Jeu.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Jeu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="40" selection-start="293" selection-end="293" vertical-scroll-proportion="0.48433048" vertical-offset="0" max-vertical-offset="425">
+            <state line="16" column="0" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="544">
               <folding>
-                <element signature="e#120#128#0" expanded="true" />
+                <element signature="e#148#156#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -182,14 +178,15 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/De.java" />
         <option value="$PROJECT_DIR$/src/iterateurDe.java" />
         <option value="$PROJECT_DIR$/src/iterateurJoueur.java" />
-        <option value="$PROJECT_DIR$/src/CollectionDes.java" />
         <option value="$PROJECT_DIR$/src/FabriqueJoueur.java" />
         <option value="$PROJECT_DIR$/src/CollectionJoueur.java" />
+        <option value="$PROJECT_DIR$/src/FabriqueDe.java" />
+        <option value="$PROJECT_DIR$/src/CollectionDes.java" />
         <option value="$PROJECT_DIR$/src/Jeu.java" />
         <option value="$PROJECT_DIR$/src/Joueur.java" />
+        <option value="$PROJECT_DIR$/src/De.java" />
       </list>
     </option>
   </component>
@@ -502,12 +499,12 @@
       <created>1392997619382</created>
       <updated>1392997619382</updated>
       <workItem from="1392997626134" duration="706000" />
-      <workItem from="1393362694785" duration="3867000" />
+      <workItem from="1393362694785" duration="4931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4573000" />
+    <option name="totallyTimeSpent" value="5637000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="3" width="1364" height="726" extended-state="0" />
@@ -582,13 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Comparable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/De.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="13" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="340">
@@ -599,13 +589,6 @@
     <entry file="file://$PROJECT_DIR$/src/iterateurDe.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="24" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="204">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/De.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="10" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
           <folding />
         </state>
       </provider>
@@ -624,18 +607,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CollectionDes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FabriqueJoueur.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="22" selection-start="189" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FabriqueDe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="11" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
           <folding />
         </state>
       </provider>
@@ -647,35 +628,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Comparable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="568">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CollectionJoueur.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0" vertical-offset="325" max-vertical-offset="748">
+        <state line="3" column="38" selection-start="91" selection-end="118" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Joueur.java">
+    <entry file="file://$PROJECT_DIR$/src/CollectionDes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="38" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <folding />
+        <state line="33" column="13" selection-start="850" selection-end="850" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="714">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Jeu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="40" selection-start="293" selection-end="293" vertical-scroll-proportion="0.48433048" vertical-offset="0" max-vertical-offset="425">
+        <state line="16" column="0" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="544">
           <folding>
-            <element signature="e#120#128#0" expanded="true" />
+            <element signature="e#148#156#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Joueur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="1" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+          <folding>
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/De.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="142" selection-end="142" vertical-scroll-proportion="0.43589744" vertical-offset="0" max-vertical-offset="442">
+          <folding />
         </state>
       </provider>
     </entry>

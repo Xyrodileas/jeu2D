@@ -1,4 +1,4 @@
-public class De {
+public class De implements Comparable{
 
   public int nbrFace;
 
@@ -6,8 +6,16 @@ public class De {
       this.nbrFace = nbrFace;
   }
 
-  public int LancerDe() {
+    public De() {
+
+    }
+
+    public int LancerDe() {
   return 1;
   }
 
+    @Override
+    public int compareTo(Object o) { //TODO Implémenter les méthodes de l'interface
+        return 0;
+    }
 }
