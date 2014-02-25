@@ -21,13 +21,14 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
             private int currentIndex = 0;
 
             @Override
-            public boolean hasNext() {
+            public boolean hasNext() { //TODO Vérifier qu'il existe
                 return true;
             }
 
             @Override
             public Joueur next() {
-                return (Joueur)FabriqueJoueur.nouveauJoueur();
+                currentIndex +=1;
+                return ListeJoueur.elementAt(currentIndex);
             }
 
             @Override

@@ -4,10 +4,17 @@ public class Jeu {
 
     private Integer nbrTours;
 
-    public CollectionJoueur<Joueur> ListeJoueurs = new CollectionJoueur<Joueur>();
+    private CollectionJoueur<Joueur> ListeJoueurs = new CollectionJoueur<Joueur>();
+
+    public Jeu(){
+        nbrTours = 0;
+    }
+    public void AjouterJoueur(String nomJoueur){
+        ListeJoueurs.ajouterJoueur(FabriqueJoueur.nouveauJoueur(nomJoueur));
+    }
 
     public void calculScoreTours() {
-
+        nbrTours +=1;
         for(Joueur i : ListeJoueurs){
             int score = ToursBrunco(i);
             //On va ensuite ajouter le résultat au score du joueur
@@ -15,6 +22,7 @@ public class Jeu {
             //On passe au joueur suivant
 
         }
+
     }
 
     // Méthode permettant de réaliser un tour de jeu pour un joueur
@@ -73,6 +81,9 @@ public class Jeu {
             }
         }
         return gagnant;
+    }
+    public int getNbrTours(){
+        return nbrTours;
     }
 
 }

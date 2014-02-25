@@ -6,8 +6,9 @@ public class Joueur implements Comparable{
   private CollectionDes  ListeDes;
 
     //TODO Ajouter une méthode reset score
-    public Joueur(){
-        score = 0;
+    public Joueur(String nom){
+        this.Nom = nom;
+        this.score = 0;
     }
     public void ajouterScore(int x){
         this.score += x;
