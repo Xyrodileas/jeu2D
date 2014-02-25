@@ -1,15 +1,13 @@
-import java.util.Vector;
-
 public class De {
 
-  public Integer nbrFace;
+  public int nbrFace;
 
-    public Vector  myFabriqueDe;
-    public Vector  myCollectionDes;
-    public Vector  myCollectionDes;
+  public De(int nbrFace){
+      this.nbrFace = nbrFace;
+  }
 
-  public Integer LancerDe() {
-  return null;
+  public int LancerDe() {
+  return 1;
   }
 
 }

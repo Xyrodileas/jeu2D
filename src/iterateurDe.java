@@ -1,7 +1,6 @@
-import java.util.Vector;
+import java.util.Iterator;
 
-public class iterateurDe{
+public interface iterateurDe extends Iterator{
 
-    public Vector  myCollectionDes;
 
 }

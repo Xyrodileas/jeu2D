@@ -1,13 +1,17 @@
-import java.util.Vector;
-
 public class Jeu {
 
-  public Integer nbrTours;
+  private Integer nbrTours;
 
-    public Vector  myCollectionJoueur;
-    public Vector  myIStrategie;
+    public CollectionJoueur ListeJoueurs;
 
   public void calculScoreTours() {
+
+      for(iterateurJoueur i = ListeJoueurs.iterateur(); i.nextJoueur();){
+          int[] resultat = new int[i.getJoueur().nbrDes()];
+          //int[] resultat = new int[3];
+          for(iterateurDe d = i.getJoueur().)
+
+      }
   }
 
   public void calculerLeVainqueur() {

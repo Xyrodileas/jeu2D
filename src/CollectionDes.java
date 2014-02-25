@@ -1,14 +1,28 @@
+import java.util.Iterator;
 import java.util.Vector;
 
-public class CollectionDes {
+public class CollectionDes implements Iterator<De>{
 
-  public Liste<De> ListeDe;
+  public Vector<De> ListeDe;
 
 
   public void ajouterDe(De de) {
   }
 
-  public void creerIterateur(IterateurDe iterateur) {
-  }
 
+    // Méthodes de l'iterator à implenter
+    @Override
+    public boolean hasNext() {
+        return false;
+    }
+
+    @Override
+    public De next() {
+        return null;
+    }
+
+    @Override
+    public void remove() {
+
+    }
 }

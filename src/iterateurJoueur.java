@@ -1,7 +1,14 @@
-import java.util.Vector;
+import java.util.Iterator;
 
-public class iterateurJoueur {
+public interface iterateurJoueur<E> extends Iterator{
 
-    public Vector  myCollectionJoueur;
+    @Override
+    public boolean hasNext();
+
+    @Override
+    public E next();
+
+    @Override
+    public void remove();
 
 }
