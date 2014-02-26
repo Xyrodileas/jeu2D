@@ -6,7 +6,6 @@ import java.util.Vector;
 public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 
   public Vector<Joueur> ListeJoueur;
-  private iterateurJoueur iterateurJoueurs;
 
   public CollectionJoueur(){
 
