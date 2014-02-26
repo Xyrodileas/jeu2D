@@ -82,134 +82,115 @@
     <favorites_list name="jeu2D" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="CollectionDes.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/CollectionDes.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="33" column="13" selection-start="850" selection-end="850" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="714">
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="CollectionJoueur.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/CollectionJoueur.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="27" column="21" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="765">
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Joueur.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Joueur.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="29" column="9" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="629">
-                  <folding>
-                    <element signature="e#439#440#0" expanded="true" />
-                    <element signature="e#475#476#0" expanded="true" />
-                    <element signature="e#503#504#0" expanded="true" />
-                    <element signature="e#531#532#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="De.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/De.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="17" column="83" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Jeu.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Jeu.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="72" column="0" selection-start="2490" selection-end="2490" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1598">
-                  <folding>
-                    <element signature="e#151#159#0" expanded="true" />
-                    <element signature="e#2790#2791#0" expanded="true" />
-                    <element signature="e#2821#2822#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FabriqueJoueur.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/FabriqueJoueur.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="4" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="iterateurDe.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/iterateurDe.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="3" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="iterateurJoueur.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/iterateurJoueur.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="10" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Iterator.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/java/util/Iterator.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="52" column="7" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.0" vertical-offset="439" max-vertical-offset="1190">
-                  <folding>
-                    <element signature="e#0#2299#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="JeuTest.java" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/testClasse/JeuTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="27" selection-start="257" selection-end="257" vertical-scroll-proportion="0.13315926" vertical-offset="153" max-vertical-offset="561">
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="Jeu.java" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Jeu.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="69" column="7" selection-start="2444" selection-end="2458" vertical-scroll-proportion="0.24" vertical-offset="1071" max-vertical-offset="1564">
-                  <folding>
-                    <element signature="e#151#159#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="CollectionDes.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CollectionDes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="13" selection-start="850" selection-end="850" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="714">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CollectionJoueur.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CollectionJoueur.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="21" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="765">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Joueur.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Joueur.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="9" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="629">
+              <folding>
+                <element signature="e#439#440#0" expanded="true" />
+                <element signature="e#475#476#0" expanded="true" />
+                <element signature="e#503#504#0" expanded="true" />
+                <element signature="e#531#532#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="De.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/De.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="83" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="iterateurDe.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/iterateurDe.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="iterateurJoueur.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/iterateurJoueur.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="10" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Iterator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/java/util/Iterator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="7" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.0" vertical-offset="439" max-vertical-offset="1190">
+              <folding>
+                <element signature="e#0#2299#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Jeu.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Jeu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="107" selection-start="1481" selection-end="1481" vertical-scroll-proportion="-0.08153477" vertical-offset="765" max-vertical-offset="1598">
+              <folding>
+                <element signature="e#151#159#0" expanded="true" />
+                <element signature="e#2877#2878#0" expanded="true" />
+                <element signature="e#2908#2909#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FabriqueJoueur.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FabriqueJoueur.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="4" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JeuTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/testClasse/JeuTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="27" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="561">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -230,10 +211,10 @@
         <option value="$PROJECT_DIR$/src/FabriqueJoueur.java" />
         <option value="$PROJECT_DIR$/src/Joueur.java" />
         <option value="$PROJECT_DIR$/src/test/JeuTest.java" />
-        <option value="$PROJECT_DIR$/src/Jeu.java" />
         <option value="$PROJECT_DIR$/src/CollectionJoueur.java" />
         <option value="$PROJECT_DIR$/test/JeuTest.java" />
         <option value="$PROJECT_DIR$/src/testClasse/JeuTest.java" />
+        <option value="$PROJECT_DIR$/src/Jeu.java" />
       </list>
     </option>
   </component>
@@ -663,12 +644,12 @@
       <created>1392997619382</created>
       <updated>1392997619382</updated>
       <workItem from="1392997626134" duration="706000" />
-      <workItem from="1393362694785" duration="9747000" />
+      <workItem from="1393362694785" duration="10116000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10453000" />
+    <option name="totallyTimeSpent" value="10822000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="3" width="1364" height="726" extended-state="0" />
@@ -773,36 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/iterateurJoueur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="10" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/java/util/Iterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="7" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="1190">
-          <folding>
-            <element signature="e#0#2299#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/iterateurDe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/De.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="83" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CollectionJoueur.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="21" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="765">
@@ -824,6 +775,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/De.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="83" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/FabriqueJoueur.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="4" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
@@ -831,22 +789,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Jeu.java">
+    <entry file="file://$PROJECT_DIR$/src/iterateurJoueur.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="0" selection-start="2490" selection-end="2490" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1598">
+        <state line="11" column="10" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/java/util/Iterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="7" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="1190">
           <folding>
-            <element signature="e#151#159#0" expanded="true" />
-            <element signature="e#2790#2791#0" expanded="true" />
-            <element signature="e#2821#2822#0" expanded="true" />
+            <element signature="e#0#2299#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/testClasse/JeuTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="27" selection-start="257" selection-end="257" vertical-scroll-proportion="0.13315926" vertical-offset="153" max-vertical-offset="561">
+        <state line="12" column="27" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="561">
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/iterateurDe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Jeu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="107" selection-start="1481" selection-end="1481" vertical-scroll-proportion="-0.08153477" vertical-offset="765" max-vertical-offset="1598">
+          <folding>
+            <element signature="e#151#159#0" expanded="true" />
+            <element signature="e#2877#2878#0" expanded="true" />
+            <element signature="e#2908#2909#0" expanded="true" />
           </folding>
         </state>
       </provider>

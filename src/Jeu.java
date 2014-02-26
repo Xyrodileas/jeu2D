@@ -41,7 +41,7 @@ public class Jeu {
                     score += 21;
                     break; // On stop la boucle des essais
                 }
-                else
+                else // Si c'est n'est pas un brunco, mais qu'on possède 3 nombres identiques, on ajoute +5
                     score += 5;
             }
             else{ // Sinon, on vérifie simplement s'il y a des points à ajouer
