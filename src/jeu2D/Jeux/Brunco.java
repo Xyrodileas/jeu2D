@@ -1,16 +1,19 @@
+package jeu2D.Jeux;
+
+import jeu2D.De;
+import jeu2D.Joueur;
+
 import java.util.Iterator;
 
-public class Jeu {
+/**
+ * Created by Alexis on 26/02/14.
+ */
+public class Brunco extends Jeu{
 
-    private Integer nbrTours;
 
-    private CollectionJoueur<Joueur> ListeJoueurs = new CollectionJoueur<Joueur>();
 
-    public Jeu(){
-        nbrTours = 0;
-    }
-    public void AjouterJoueur(String nomJoueur){
-        ListeJoueurs.ajouterJoueur(FabriqueJoueur.nouveauJoueur(nomJoueur));
+    public Brunco(){
+        super();
     }
 
     public void calculScoreTours() {
@@ -73,6 +76,8 @@ public class Jeu {
 
     }
 
+
+
     public Joueur calculerLeVainqueur() {
         Joueur gagnant = null;
         for(Joueur i : ListeJoueurs){
@@ -82,8 +87,4 @@ public class Jeu {
         }
         return gagnant;
     }
-    public int getNbrTours(){
-        return nbrTours;
-    }
-
 }

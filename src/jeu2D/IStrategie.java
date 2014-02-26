@@ -1,3 +1,7 @@
+package jeu2D;
+
+import jeu2D.Jeux.Jeu;
+
 import java.util.Vector;
 
 public class IStrategie {

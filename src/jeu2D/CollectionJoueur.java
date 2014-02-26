@@ -1,3 +1,5 @@
+package jeu2D;
+
 import java.util.Iterator;
 import java.util.Vector;
 

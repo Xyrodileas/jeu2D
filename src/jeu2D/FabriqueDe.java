@@ -1,3 +1,5 @@
+package jeu2D;
+
 import java.util.Vector;
 
 public class FabriqueDe {

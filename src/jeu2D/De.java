@@ -1,3 +1,5 @@
+package jeu2D;
+
 public class De implements Comparable{
 
   public int nbrFace;

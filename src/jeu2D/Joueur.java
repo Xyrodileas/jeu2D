@@ -1,3 +1,5 @@
+package jeu2D;
+
 public class Joueur implements Comparable{
 
   public String Nom;
