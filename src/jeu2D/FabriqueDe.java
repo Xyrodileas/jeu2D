@@ -1,13 +1,9 @@
 package jeu2D;
 
-import java.util.Vector;
-
 public class FabriqueDe {
 
-    public Vector  myDe;
-    public Vector  myCollectionDes;
 
-  public static De FabriqueDe() {
+  public static De nouveauDe() { //TODO Refactor le nom et prendre en compte le nbr de faces
   return new De();
   }
 

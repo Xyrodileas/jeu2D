@@ -9,7 +9,7 @@ public class CollectionDes implements Iterable<De>{
     public int nbrDes;
 
     public void ajouterDe(int faces) { //TODO Modifier pour prendre en compte le nombre de faces
-        ListeDe.add(FabriqueDe.FabriqueDe());
+        ListeDe.add(FabriqueDe.nouveauDe());
         nbrDes += 1;
     }
 
@@ -17,17 +17,17 @@ public class CollectionDes implements Iterable<De>{
     @Override
     public Iterator<De> iterator() { //TODO Implémenter l'itérateur correctement
         return new Iterator<De>() {
-
+            //Contient l'index de l'élément actuel
             private int currentIndex = 0;
 
             @Override
-            public boolean hasNext() {
+            public boolean hasNext() { //TODO Vérifier s'il existe un élément suivant
                 return true;
             }
 
             @Override
-            public De next() {
-                return FabriqueDe.FabriqueDe();
+            public De next() { //TODO Implanter le vrai comportement
+                return FabriqueDe.nouveauDe();
             }
 
             @Override

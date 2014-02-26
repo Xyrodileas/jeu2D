@@ -18,6 +18,10 @@ public class Joueur implements Comparable{
     public int nbrDes(){
         return 3; //TODO Implenter le comportement
     }
+
+    public void ajouterDe(int nbrFaces){
+        //TODO A remplir
+    }
     public CollectionDes getListeDes(){
         return this.ListeDes;
     }
