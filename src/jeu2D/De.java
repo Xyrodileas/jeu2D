@@ -6,12 +6,14 @@ import java.util.Comparator;
 public class De implements Comparable, Comparator{
 
 	
+	//CONSTANTE
+	  private final int NB_FACE_TRADI=6;
+	  
 	// LES ATTRIBUTS DE DE
 	  private int nbrFace;
 	  private  Color couleur;
 	  private int dernierResultat;
 
-	  
 	  //LES CONSTRUCTEURS
 	  
 	  /**
@@ -19,6 +21,7 @@ public class De implements Comparable, Comparator{
 	   * Constructeur par défaut Vide
 	   */
 	  public De() {
+		  nbrFace=NB_FACE_TRADI;
 
 	  }
 	  /**
