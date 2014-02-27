@@ -29,7 +29,7 @@ public class Brunco extends Jeu{
     }
 
     // Méthode permettant de réaliser un tour de jeu pour un joueur
-    private int ToursBrunco(Joueur leJoueur){
+    public int ToursBrunco(Joueur leJoueur){
         int[] resultat;
         int score = 0; // Va contenir le score pour le tours du joueur
         for(int essai = 0; essai < 3; essai++){
@@ -55,10 +55,10 @@ public class Brunco extends Jeu{
     }
 
     // Permet de réaliser un lancé de chaque dés possédé par le joueur
-    private int[] lancerLesDes(Joueur leJoueur) {
+    public int[] lancerLesDes(Joueur leJoueur) { //TODO N'importe quel joueur peut lancer les dés, vérifier qu'il existe
         int[] resultat = new int[leJoueur.nbrDes()]; // Variable servant à stocké le resultat des lancés
         int index = 0;
-        for(Iterator<De> d = leJoueur.getListeDes().iterator(); d.hasNext(); index++){ //On parcours chacun des dés du joueur
+        for(Iterator<De> d = leJoueur.getListeDes().iterator(); d.hasNext(); index++){ //On parcours chacun des dés du joueur //TODO hasnext() needed
             resultat[index] = d.next().LancerDe(); //On lance le dés, puis on stock le résultat du lancé
         }
         return resultat;
@@ -87,4 +87,5 @@ public class Brunco extends Jeu{
         }
         return gagnant;
     }
+
 }

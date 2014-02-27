@@ -10,6 +10,7 @@ public class Joueur implements Comparable {
 	public Joueur(String nom) {
 		this.nom = nom;
 		this.score = 0;
+        ListeDes = new CollectionDes();
 	}
 
 	public void ajouterScore(int x) {

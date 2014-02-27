@@ -24,4 +24,7 @@ public abstract class Jeu {
         return nbrTours;
     }
 
+    public void setNbrTours(int nbrTours) {
+        this.nbrTours = nbrTours;
+    }
 }

@@ -8,10 +8,13 @@ public class CollectionDes implements Iterable<De> {
 	public Vector<De> ListeDe;
 	private int nbrDes;
 
-	public void ajouterDe(int faces) { // TODO Modifier pour prendre en compte
-										// le nombre de faces
-		ListeDe.add(FabriqueDe.nouveauDe());
-		setNbrDes(getNbrDes() + 1);
+    public CollectionDes(){
+        ListeDe = new Vector<De>();
+    }
+
+	public void ajouterDe(int faces) { // TODO Modifier pour prendre en compte le nombre de faces
+		ListeDe.add(FabriqueDe.nouveauDe(faces));
+		nbrDes += 1;
 	}
 
 	@Override
@@ -29,7 +32,7 @@ public class CollectionDes implements Iterable<De> {
 
 			@Override
 			public De next() { // TODO Implanter le vrai comportement
-				return FabriqueDe.nouveauDe();
+				return FabriqueDe.nouveauDe(5);
 			}
 
 			@Override

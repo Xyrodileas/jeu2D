@@ -8,9 +8,9 @@ public class De implements Comparable{
       this.nbrFace = nbrFace;
   }
 
-    public De() {
+  public De() {
 
-    }
+  }
 
     public int LancerDe() {
   return 1;
