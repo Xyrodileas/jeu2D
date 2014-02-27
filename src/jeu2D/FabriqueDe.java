@@ -9,7 +9,7 @@ package jeu2D;
 public class FabriqueDe {
 
 	
-	s
+
 	/**
 	 * Permet de construire un de
 	 * 6 face par defaut et le retourne

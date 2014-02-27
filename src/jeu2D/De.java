@@ -18,7 +18,7 @@ public class De implements Comparable, Comparator{
 	  
 	  /**
 	   * Constructeur : De
-	   * Constructeur par défaut Vide
+	   * Constructeur par dï¿½faut Vide
 	   */
 	  public De() {
 		  nbrFace=NB_FACE_TRADI;
@@ -27,9 +27,9 @@ public class De implements Comparable, Comparator{
 	  /**
 	   * Constructeur : De
 	   * Constructeur par copie d'attributs
-	   * Recois une (int) en paramètre
-	   * permettant de créer le nombre de face 
-	   * souhaiter du dé
+	   * Recois une (int) en paramï¿½tre
+	   * permettant de crï¿½er le nombre de face 
+	   * souhaiter du dï¿½
 	   * @param nbrFace
 	   */
 	  public De(int nbrFace){
@@ -40,8 +40,7 @@ public class De implements Comparable, Comparator{
 	  //LES ACCESSEURS
 	  /**
 	   * Permet de retourner le nombre
-	   * de face du de
-	   * @param nbrFace (int)
+	   * de face
 	   */
 	  public int getNbrFace() {
 		return nbrFace;
@@ -49,8 +48,7 @@ public class De implements Comparable, Comparator{
 	  
 	  /**
 	   * Permet de retourner
-	   * la couleur du de
-	   * @param nbrFace (int)
+	   * la couleur
 	   */
 	  public Color getCouleur() {
 		return couleur;
@@ -66,7 +64,7 @@ public class De implements Comparable, Comparator{
 	   * le type de jeu souhaite
 	   * permet l'adaptation du de selon les jeux
 	   * possible
-	   * @param nbrFace (int)
+	   * @param nbrFaceRecu (int)
 	   */
 	  public void setNbrFace(int nbrFaceRecu) {
 		this.nbrFace = nbrFaceRecu;
@@ -75,9 +73,9 @@ public class De implements Comparable, Comparator{
 	  
 	  /**
 	   * Methode qui permet de mofifier
-	   * la couleur du de si le jeu nécéssite des
+	   * la couleur du de si le jeu nï¿½cï¿½ssite des
 	   * couleurs de de
-	   * @param couleur (Color)
+	   * @param couleurRecu (Color)
 	   */
 	  public void setCouleur(Color couleurRecu) {
 		this.couleur = couleurRecu;
@@ -85,10 +83,10 @@ public class De implements Comparable, Comparator{
 
 	  /**
 	   * Methode qui permet d'affecter une valeur
-	   * à l'attribut du dernier résultat du de
-	   * @param dernierRésultat (int)
+	   * ï¿½ l'attribut du dernier rï¿½sultat du de
+	   * @param dernierResultatRecu (int)
 	   */
-	  public void setDernierRésultat(int dernierResultatRecu) {
+	  public void setDernierResultat(int dernierResultatRecu) {
 		this.dernierResultat = dernierResultatRecu;
 	  }
 	  
@@ -96,13 +94,13 @@ public class De implements Comparable, Comparator{
 	  	/**
 	  	 * Methode qui permet de 
 	  	 * retourner une chaine de caratere
-	  	 * comprenant toutes les caractéristique 
+	  	 * comprenant toutes les caractï¿½ristique 
 	  	 * du de
 	  	 * @return (String)
 	  	 */
 	  	public String toString() {
 	  		return "De [nombre de face=" + nbrFace + ", la couleur est =" + couleur
-				+ ", Le dernier résultat fut  : " + dernierResultat + "]";
+				+ ", Le dernier rï¿½sultat fut  : " + dernierResultat + "]";
 	  	}
 	  	
 	  	
@@ -112,7 +110,7 @@ public class De implements Comparable, Comparator{
 	  	 * et de retourner la face du de 
 	  	 * sur lequelle celui-ci sera tomber.
 	  	 * Utilisation de Math.random
-	  	 * Pour l'aléatoire
+	  	 * Pour l'alï¿½atoire
 	  	 * @return faceDuDeTomber (int)
 	  	 */
 		public int LancerDe() {
@@ -126,7 +124,7 @@ public class De implements Comparable, Comparator{
 	    
 		/**
 		 * Methode qui permet de 
-		 * comparer deux de grâce à 
+		 * comparer deux de grï¿½ce ï¿½ 
 		 * l'interface Comparable
 		 * 1== valeur du Dernier lancer identique  (valeur du de face)
 		 * 0== valeur du Dernier lancer differente (valeur du de face)
@@ -141,16 +139,16 @@ public class De implements Comparable, Comparator{
 		       if(this.getDernierResultat() == objetRecuTmp.getDernierResultat())
 		    	   return 1;
 	    	
-	       	//Sinon on retourne le résultat 0 = non identique.
+	       	//Sinon on retourne le rï¿½sultat 0 = non identique.
 	    	return 0;
 	    }
 	    
 	    
 	    /**
 	     * methode qui permet de comparer
-	     * 3 des à la fois
+	     * 3 des ï¿½ la fois
 	     * si les 3 faces sont identique alors == 1
-	     * sinon les 3 faces sont différente alors == 0
+	     * sinon les 3 faces sont diffï¿½rente alors == 0
 	     * @return comparaison (int)
 	     */
 	    public int compare(Object arg0, Object arg1) {
