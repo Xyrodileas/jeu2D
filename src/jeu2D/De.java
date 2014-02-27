@@ -1,6 +1,6 @@
 package jeu2D;
 
-public class De implements Comparable, Iterable<De>{
+public class De implements Comparable{
 
   public int nbrFace;
 
