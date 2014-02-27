@@ -23,8 +23,8 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 			private int currentIndex = 0;
 
 			@Override
-			public boolean hasNext() {
-				if (ListeJoueur.elementAt(currentIndex) != null)
+			public boolean hasNext() { //TODO NOPE NOPE NOPE ArrayIndexOutOfBoundsException
+				if (ListeJoueur.elementAt(currentIndex) != null) // NOPE NOPE NOPE
 					return true;
 				else
 					return false;
