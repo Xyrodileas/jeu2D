@@ -31,7 +31,7 @@ public class BruncoTest extends TestCase {
         Jeu Brunco = new Brunco();
         Brunco.AjouterJoueur("John Doe");
         Brunco.AjouterJoueur("Garl Field");
-        Joueur jtest = (Joueur) new FabriqueJoueur.nouveauJoueur("John Doe");
+        Joueur jtest = FabriqueJoueur.nouveauJoueur("John Doe");
         Assert.assertEquals(jtest, Brunco.calculerLeVainqueur());
     }
 

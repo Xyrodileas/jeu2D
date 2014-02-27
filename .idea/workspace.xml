@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="039ebb89-90e1-4819-b39e-b3e28bbd2eec" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testClasse/BruncoTest.java" afterPath="$PROJECT_DIR$/src/testClasse/BruncoTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jeu2D/De.java" afterPath="$PROJECT_DIR$/src/jeu2D/De.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jeu2D/FabriqueJoueur.java" afterPath="$PROJECT_DIR$/src/jeu2D/FabriqueJoueur.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jeu2D.iws" />
@@ -76,7 +80,7 @@
     <favorites_list name="jeu2D" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.32012194">
       <split-first>
         <leaf>
           <file leaf-file-name="CollectionJoueur.java" pinned="false" current="false" current-in-tab="false">
@@ -100,7 +104,7 @@
           <file leaf-file-name="De.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/jeu2D/De.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="83" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="476">
+                <state line="22" column="1" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="53" max-vertical-offset="476">
                   <folding />
                 </state>
               </provider>
@@ -124,19 +128,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BruncoTest.java" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="BruncoTest.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/testClasse/BruncoTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="33" column="50" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" vertical-offset="427" max-vertical-offset="1003">
+                <state line="36" column="0" selection-start="860" selection-end="860" vertical-scroll-proportion="1.4010988" vertical-offset="0" max-vertical-offset="901">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="FabriqueJoueur.java" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="FabriqueJoueur.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/jeu2D/FabriqueJoueur.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="13" selection-start="189" selection-end="189" vertical-scroll-proportion="0.48920864" vertical-offset="0" max-vertical-offset="417">
+                <state line="7" column="2" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
                   <folding />
                 </state>
               </provider>
@@ -146,10 +150,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="CollectionDes.java" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="CollectionDes.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/jeu2D/CollectionDes.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="4" column="0" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="748">
+                <state line="11" column="24" selection-start="298" selection-end="298" vertical-scroll-proportion="0.39812645" vertical-offset="0" max-vertical-offset="731">
                   <folding />
                 </state>
               </provider>
@@ -158,7 +162,7 @@
           <file leaf-file-name="FabriqueDe.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/jeu2D/FabriqueDe.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="3" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="255">
+                <state line="3" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
                   <folding />
                 </state>
               </provider>
@@ -173,10 +177,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Jeu.java" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="Jeu.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/jeu2D/Jeux/Jeu.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="4" column="20" selection-start="101" selection-end="101" vertical-scroll-proportion="0.08" vertical-offset="0" max-vertical-offset="476">
+                <state line="4" column="20" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
                   <folding />
                 </state>
               </provider>
@@ -216,7 +220,6 @@
         <option value="$PROJECT_DIR$/src/testClasse/JeuTest.java" />
         <option value="$PROJECT_DIR$/src/Jeux/Jeu.java" />
         <option value="$PROJECT_DIR$/src/jeu2D/Jeu.java" />
-        <option value="$PROJECT_DIR$/src/jeu2D/FabriqueJoueur.java" />
         <option value="$PROJECT_DIR$/src/jeu2D/Jeux/Jeu.java" />
         <option value="$PROJECT_DIR$/src/jeu2D/Jeux/Brunco.java" />
         <option value="$PROJECT_DIR$/src/jeu2D/Joueur.java" />
@@ -224,6 +227,8 @@
         <option value="$PROJECT_DIR$/src/jeu2D/CollectionDes.java" />
         <option value="$PROJECT_DIR$/src/jeu2D/CollectionJoueur.java" />
         <option value="$PROJECT_DIR$/src/jeu2D/testClasse/JeuTest.java" />
+        <option value="$PROJECT_DIR$/src/jeu2D/De.java" />
+        <option value="$PROJECT_DIR$/src/jeu2D/FabriqueJoueur.java" />
         <option value="$PROJECT_DIR$/src/testClasse/BruncoTest.java" />
       </list>
     </option>
@@ -367,19 +372,19 @@
     <property name="LayoutCode.rearrangeEntries" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="testClasse" />
       <recent name="test" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="junit.framework.TestCase" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alexis\Documents\GitHub\jeu2D" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="jeu2D" />
       <recent name="Jeux" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Alexis\Documents\GitHub\jeu2D" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.JeuTest.testResultatSansBrunco">
@@ -721,7 +726,8 @@
       <workItem from="1392997626134" duration="706000" />
       <workItem from="1393362694785" duration="10490000" />
       <workItem from="1393425008930" duration="4664000" />
-      <workItem from="1393455557003" duration="266000" />
+      <workItem from="1393455557003" duration="687000" />
+      <workItem from="1393510045477" duration="2252000" />
     </task>
     <task id="LOCAL-00001" summary="Modification structure + template method">
       <created>1393426439573</created>
@@ -743,7 +749,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16126000" />
+    <option name="totallyTimeSpent" value="18799000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -779,23 +785,23 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21885522" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2181208" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21885522" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24732006" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24655436" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21885522" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -825,6 +831,76 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/jeu2D/CollectionJoueur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="28" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jeu2D/Joueur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="23" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jeu2D/De.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="83" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/java/util/Iterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="7" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="1581">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testClasse/BruncoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="50" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" vertical-offset="427" max-vertical-offset="1003">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jeu2D/FabriqueJoueur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jeu2D/CollectionDes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jeu2D/FabriqueDe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jeu2D/Jeux/Brunco.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="16" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1632">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jeu2D/Jeux/Jeu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="20" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/jeu2D/CollectionJoueur.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="28" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
@@ -965,30 +1041,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jeu2D/FabriqueDe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/jeu2D/Joueur.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="23" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="663">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jeu2D/De.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="83" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jeu2D/CollectionDes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
           <folding />
         </state>
       </provider>
@@ -1009,28 +1064,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jeu2D/Jeux/Jeu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="20" selection-start="101" selection-end="101" vertical-scroll-proportion="0.08" vertical-offset="0" max-vertical-offset="476">
+        <state line="4" column="20" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jeu2D/Jeux/Brunco.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="16" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1632">
+        <state line="22" column="32" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1632">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/testClasse/BruncoTest.java">
+    <entry file="file://$PROJECT_DIR$/src/jeu2D/FabriqueDe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="50" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" vertical-offset="427" max-vertical-offset="1003">
+        <state line="3" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jeu2D/CollectionDes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="24" selection-start="298" selection-end="298" vertical-scroll-proportion="0.39812645" vertical-offset="0" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jeu2D/De.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="1" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="53" max-vertical-offset="476">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jeu2D/FabriqueJoueur.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="189" selection-end="189" vertical-scroll-proportion="0.48920864" vertical-offset="0" max-vertical-offset="417">
+        <state line="7" column="2" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testClasse/BruncoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="860" selection-end="860" vertical-scroll-proportion="1.4010988" vertical-offset="0" max-vertical-offset="901">
           <folding />
         </state>
       </provider>
