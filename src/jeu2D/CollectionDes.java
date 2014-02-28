@@ -13,10 +13,8 @@ import java.util.Vector;
  */
 public class CollectionDes implements Iterable<De> {
 
-	public Collection<De> ListeDe;
+	public Vector<De> ListeDe;
 	private int nbrDes;
-	private Iterator<De> iterateurDeLaCollection;
-	private int positionIt=0;
 
 	
 	/**
@@ -25,9 +23,8 @@ public class CollectionDes implements Iterable<De> {
 	 * et indique le nombre de des=0
 	 */
     public CollectionDes(){
-        ListeDe = new ArrayList<De>() ;
+        ListeDe = new Vector<De>() ;
         nbrDes =0;
-        iterateurDeLaCollection=ListeDe.iterator();
     }
     
 	
@@ -37,14 +34,10 @@ public class CollectionDes implements Iterable<De> {
 	 * et indique le nombre de des=0
 	 */
     public CollectionDes(int nbDe, int nbFaces){
-        ListeDe = new ArrayList<De>() ;
+        ListeDe = new Vector<De>() ;
         nbrDes=nbDe;
-        iterateurDeLaCollection=ListeDe.iterator();
         for(int i=0;i<nbDe;i++)
         	ListeDe.add(FabriqueDe.nouveauDe(nbDe, nbFaces)[i]); 
-        	//SI on veux que L'iterateur suive la position de la collection il faut alors décommenter
-        	// iterateurDeLaCollection.next();
-        	//positionIt++;
     }
 
     
@@ -56,7 +49,6 @@ public class CollectionDes implements Iterable<De> {
 	public void ajouterDe(int faces) { // TODO Modifier pour prendre en compte le nombre de faces
 		ListeDe.add(FabriqueDe.nouveauDe(faces));
 		nbrDes++;
-		 iterateurDeLaCollection.next();
 	}
 
 	
@@ -75,49 +67,47 @@ public class CollectionDes implements Iterable<De> {
 	 * Permet d'instancier un itérateur
 	 * sur la Collection de De
 	 */
+	@Override
 	public Iterator<De> iterator() {
-		return ListeDe.iterator(); 
+		return new Iterator<De>() {
 
+			private int positionCourante = 0;
+
+			/**
+			 * Permet de retourner le De suivant dans
+			 * le vecteur de De (Collection)
+			 * 
+			 * Consequent :
+			 * 			si il n'y a pas de suivant il leve une exception qui directement gerer
+			 * 			en retournant un boolean false sinon si suivant existe alors retourne vrai
+			 */
+			public boolean hasNext()   {
+				try{
+					// dispose d'un suivant ou dans renvoie vrai
+					if (ListeDe.elementAt(positionCourante + 1) != null)
+						 return true;
+				}
+				//Permet de gerer l'exception et renvoie null si pas de suivant
+			catch (ArrayIndexOutOfBoundsException e) {return false;}
+				return false;
 		}
-	
-	/**
-	 * Permet de savoir si l'element dispose d'un
-	 * de suivant
-	 * @return boolean
-	 */
-	public boolean hasNext(){
-		if(iterateurDeLaCollection.hasNext())
-			return true;
-		return false;
-	}
-	
-	
-	/**
-	 * methode qui retourne le De d avant
-	 * @return De
-	 */
-	public De preview(){
-		Iterator<De> tmpI= ListeDe.iterator();
-		
-		while(tmpI!=iterateurDeLaCollection)
-			tmpI.next();
-		
-		return (De)tmpI;
-	}
-	
-	public De next(){
-		if(iterateurDeLaCollection.hasNext()){
-			return (De)iterateurDeLaCollection.next();
+
+			/**
+			 * Permet de se positionner à 
+			 * l element ( la position suivante dans le vecteur)
+			 */
+			public De next() {
+				positionCourante++;
+				return ListeDe.elementAt(positionCourante);
 			}
-		return (De)iterateurDeLaCollection;
+
+			/**
+			 * Methode qui permet de supprimer
+			 * l'element à la position courante
+			 */
+			public void remove() {
+				ListeDe.remove(positionCourante);
+			}
+		};
 	}
-	
-	/**
-	 * Methode qui permet de supprimer 
-	 * l'element courant
-	 */
-	public void supprime(){
-		iterateurDeLaCollection.remove();
-	}
-	
 }
