@@ -3,6 +3,11 @@ package jeu2D;
 import java.awt.Color;
 import java.util.Comparator;
 
+/**
+ * Classe De
+ * permet de creer les des
+ *
+ */
 public class De implements Comparable, Comparator{
 
 	
