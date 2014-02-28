@@ -2,7 +2,7 @@ package jeu2D;
 
 public class Joueur implements Comparable {
 
-	public String nom;
+	private String nom;
 	private int score;
 
 	private CollectionDes ListeDes;
@@ -33,6 +33,10 @@ public class Joueur implements Comparable {
 	public int getScore() {
 		return score;
 	}
+	
+	public String getNom(){
+		return nom;
+	}
 
 	public void resetScore() {
 		score = 0;
@@ -40,7 +44,11 @@ public class Joueur implements Comparable {
 
 	@Override
 	public int compareTo(Object o) {
-//		if(this.nom.equals((Joueur)o.nom))
+		Joueur joueurTemp = (Joueur)o;
+		
+		if((this.nom.equals(joueurTemp.nom))&&(this.score==joueurTemp.score))
+			return 1;
+		else
 		
 		return 0;
 	}
