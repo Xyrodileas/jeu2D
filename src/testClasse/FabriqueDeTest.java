@@ -6,8 +6,9 @@ import junit.framework.TestCase;
 
 
 /**
- * JUnit Permet de test
- * la classe FabriqueDe
+ * JUnit de la Classe FabriqueDe
+ * Permet de tester
+ * la classe FabriqueDe et l'ensemble des methodes
  * @author i7
  *
  */

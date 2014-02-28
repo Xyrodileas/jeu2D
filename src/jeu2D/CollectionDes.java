@@ -39,8 +39,9 @@ public class CollectionDes implements Iterable<De> {
         for(int i=0;i<nbDe;i++)
         	ListeDe.add(FabriqueDe.nouveauDe(nbDe, nbFaces)[i]); 
     }
-
     
+    
+   
     /**
      * Permet d'ajouter un de à la collection
      * selon le nombre de face souhaité
@@ -91,24 +92,61 @@ public class CollectionDes implements Iterable<De> {
 			catch (ArrayIndexOutOfBoundsException e) {return false;}
 				return false;
 		}
+			
+			
 			/**
-			 * Methode qui permet de recupere l'element courant
-			 * dans le vecteur
-			 * @return De
+			 * Permet de retourner le De precedent dans
+			 * le vecteur de De (Collection)
+			 * 
+			 * Consequent :
+			 * 			si il n'y a pas de suivant il leve une exception qui directement gerer
+			 * 			en retournant un boolean false sinon si precedent existe alors retourne vrai
 			 */
-			public De recupereElementCourant() {
-				return ListeDe.elementAt(positionCourante);
-			}
+			public boolean hasPrevious()   {
+				try{
+					// dispose d'un suivant ou dans renvoie vrai
+					if (ListeDe.elementAt(positionCourante - 1) != null)
+						 return true;
+				}
+				//Permet de gerer l'exception et renvoie null si pas de suivant
+			catch (ArrayIndexOutOfBoundsException e) {return false;}
+				return false;
+		}
+		
 
 			/**
-			 * Permet de se positionner à 
-			 * l element ( la position suivante dans le vecteur)
+			 * Permet de se positionner
+			 * apres la position courante
+			 *  et de renvoyer l element ( le De)
 			 */
 			public De next() {
 				positionCourante++;
 				return ListeDe.elementAt(positionCourante);
 			}
+			
+			/**
+			 * Permet de se positionner
+			 * avant la position courante
+			 *  et de renvoyer l element ( le De)
+			 */
+			public De previous() {
+				positionCourante--;
+				return ListeDe.elementAt(positionCourante);
+			}
+			
+			
+			
+			/**
+			 * Methode qui permet de recupere l'element courant
+			 * dans le vecteur
+			 * @return De
+			 */
+			public De getElementCourant() {
+				return ListeDe.elementAt(positionCourante);
+			}
 
+			
+			
 			/**
 			 * Methode qui permet de supprimer
 			 * l'element à la position courante
