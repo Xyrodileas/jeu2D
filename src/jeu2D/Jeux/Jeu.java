@@ -4,7 +4,7 @@ import jeu2D.CollectionJoueur;
 import jeu2D.FabriqueJoueur;
 import jeu2D.Joueur;
 
-public abstract class Jeu {
+public abstract class Jeu{
 
     protected Integer nbrTours;
 

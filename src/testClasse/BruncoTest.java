@@ -32,7 +32,7 @@ public class BruncoTest extends TestCase {
     public void testCalculerLeVainqueur() throws Exception {
         BruncoTest.AjouterJoueur("John Doe");
         BruncoTest.AjouterJoueur("Garl Field");
-        Joueur jtest = FabriqueJoueur.nouveauJoueur("John Doe");
+        Joueur jtest = FabriqueJoueur.nouveauJoueur("John Doe"); //TODO Corriger
         Assert.assertEquals(jtest, BruncoTest.calculerLeVainqueur());
     }
 
