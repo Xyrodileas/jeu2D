@@ -16,7 +16,7 @@ public class De implements Comparable, Comparator{
 	  
 	// LES ATTRIBUTS DE DE
 	  private int nbrFace;
-	  private  Color couleur;
+	  private  Color couleur=Color.red;
 	  private int dernierResultat;
 
 	  //LES CONSTRUCTEURS
@@ -160,7 +160,7 @@ public class De implements Comparable, Comparator{
 	    	De objetRecuTmp1= (De)arg0;
 	    	De objetRecuTmp2= (De)arg1;
 	    	
-	    	if(this.dernierResultat==objetRecuTmp1.getDernierResultat() && this.nbrFace==objetRecuTmp2.getDernierResultat())
+	    	if(this.dernierResultat==objetRecuTmp1.getDernierResultat() && this.dernierResultat==objetRecuTmp2.getDernierResultat())
 	    		return 1;
 	    	
 			return 0;
