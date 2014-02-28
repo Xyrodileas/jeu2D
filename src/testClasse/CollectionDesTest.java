@@ -82,9 +82,13 @@ public class CollectionDesTest extends TestCase  {
 		Object iterateur = ((CollectionDes)collection).iterator();				//Creation d'un iterateur de CollectionDes
 		assertTrue(iterateur instanceof  Iterator);								//Test Instance de Iterateur<De>
 		
-		Iterator<De> iterateur2 = ((CollectionDes)collection).iterator();
-		//iterateur2.
+		Iterator iterateur2 = ((CollectionDes)collection).iterator();			//Creation d'un nouvel Iterator de la CollectionDe
 		
+		Assert.assertTrue(iterateur2.hasNext());								//Test Si dispose d'un suivant Oui
+		Assert.assertNotNull(iterateur2.next());								//Test si le suivant n'est pas null ( dispose d'un de)
+		Assert.assertNotNull(iterateur2.next());								//Test si le suivant n'est pas null ( dispose d'un de)
+		Assert.assertTrue(iterateur2.hasNext()==false);							//Test si il a un suivant ( Normalement non car 3 elements dans la collection seulement)
+	
 	}
 
 }

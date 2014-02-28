@@ -116,7 +116,7 @@ public class CollectionDes implements Iterable<De> {
 
 			/**
 			 * Permet de se positionner
-			 * apres la position courante
+			 *  la position courante
 			 *  et de renvoyer l element ( le De)
 			 */
 			public De next() {
