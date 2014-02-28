@@ -16,6 +16,7 @@ public class CollectionDes implements Iterable<De> {
 	public Collection<De> ListeDe;
 	private int nbrDes;
 	private Iterator<De> iterateurDeLaCollection;
+	private int positionIt=0;
 
 	
 	/**
@@ -43,6 +44,7 @@ public class CollectionDes implements Iterable<De> {
         	ListeDe.add(FabriqueDe.nouveauDe(nbDe, nbFaces)[i]); 
         	//SI on veux que L'iterateur suive la position de la collection il faut alors décommenter
         	// iterateurDeLaCollection.next();
+        	//positionIt++;
     }
 
     
@@ -89,12 +91,33 @@ public class CollectionDes implements Iterable<De> {
 		return false;
 	}
 	
+	
 	/**
-	 * Methode qui retourne le de 
-	 * de la collection
+	 * methode qui retourne le De d avant
 	 * @return De
 	 */
-	public De retourneDe(){
-		return null;
+	public De preview(){
+		Iterator<De> tmpI= ListeDe.iterator();
+		
+		while(tmpI!=iterateurDeLaCollection)
+			tmpI.next();
+		
+		return (De)tmpI;
 	}
+	
+	public De next(){
+		if(iterateurDeLaCollection.hasNext()){
+			return (De)iterateurDeLaCollection.next();
+			}
+		return (De)iterateurDeLaCollection;
+	}
+	
+	/**
+	 * Methode qui permet de supprimer 
+	 * l'element courant
+	 */
+	public void supprime(){
+		iterateurDeLaCollection.remove();
+	}
+	
 }
