@@ -91,6 +91,14 @@ public class CollectionDes implements Iterable<De> {
 			catch (ArrayIndexOutOfBoundsException e) {return false;}
 				return false;
 		}
+			/**
+			 * Methode qui permet de recupere l'element courant
+			 * dans le vecteur
+			 * @return De
+			 */
+			public De recupereElementCourant() {
+				return ListeDe.elementAt(positionCourante);
+			}
 
 			/**
 			 * Permet de se positionner à 
