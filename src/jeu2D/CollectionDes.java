@@ -74,12 +74,15 @@ public class CollectionDes implements Iterable<De> {
 			private int positionCourante = 0;
 
 			/**
-			 * Permet de retourner le De suivant dans
-			 * le vecteur de De (Collection)
+			 * Permet de savoir si la position
+			 * suivante de la position courante
+			 * contient un De ou non
+			 * Navigue dans le vecteur de De (Collection)
 			 * 
 			 * Consequent :
 			 * 			si il n'y a pas de suivant il leve une exception qui directement gerer
 			 * 			en retournant un boolean false sinon si suivant existe alors retourne vrai
+			 * @return boolean
 			 */
 			public boolean hasNext()   {
 				try{
@@ -91,13 +94,48 @@ public class CollectionDes implements Iterable<De> {
 			catch (ArrayIndexOutOfBoundsException e) {return false;}
 				return false;
 		}
+			
+			/**
+			 *Permet de savoir si la position precedent
+			 * la position courante
+			 * contient un De ou non
+			 * Navigue dans le vecteur de De (Collection)
+			 * Consequent :
+			 * 			si il n'y a pas de precedent il leve une exception qui directement gerer
+			 * 			en retournant un boolean false sinon si precedent existe alors retourne vrai
+			 * @return boolean 
+			 */
+			public boolean hasPrevious()   {
+				try{
+					// dispose d'un suivant ou dans renvoie vrai
+					if (ListeDe.elementAt(positionCourante - 1) != null)
+						 return true;
+				}
+				//Permet de gerer l'exception et renvoie null si pas de suivant
+			catch (ArrayIndexOutOfBoundsException e) {return false;}
+				return false;
+		}
 
 			/**
 			 * Permet de se positionner à 
-			 * l element ( la position suivante dans le vecteur)
+			 * l element suivant et de 
+			 * renvoyer le De contenu ( la position suivante dans le vecteur)
+			 * @return De
 			 */
 			public De next() {
 				positionCourante++;
+				return ListeDe.elementAt(positionCourante);
+			}
+			
+			
+			/**
+			 * Permet de se positionner à 
+			 * l element d'avant et de retourner
+			 * le De contenu
+			 * @return De
+			 */
+			public De previous(){
+				positionCourante--;
 				return ListeDe.elementAt(positionCourante);
 			}
 
