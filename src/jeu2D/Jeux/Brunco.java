@@ -56,7 +56,7 @@ public class Brunco extends Jeu{
 
     // Permet de réaliser un lancé de chaque dés possédé par le joueur
     public int[] lancerLesDes(Joueur leJoueur) { //TODO N'importe quel joueur peut lancer les dés, vérifier qu'il existe
-        int[] resultat = new int[leJoueur.nbrDes()]; // Variable servant à stocké le resultat des lancés
+        int[] resultat = new int[leJoueur.getNbrDes()]; // Variable servant à stocké le resultat des lancés
         int index = 0;
         for(Iterator<De> d = leJoueur.getListeDes().iterator(); d.hasNext(); index++){ //On parcours chacun des dés du joueur //TODO hasnext() needed
             resultat[index] = d.next().LancerDe(); //On lance le dés, puis on stock le résultat du lancé

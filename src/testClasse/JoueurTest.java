@@ -29,7 +29,7 @@ public class JoueurTest extends TestCase {
 		Patrick.ajouterDe(6);
 		Patrick.ajouterDe(6);
 		Patrick.ajouterDe(6);
-		assertEquals(Patrick.nbrDes(), 3);
+		assertEquals(Patrick.getNbrDes(), 3);
 	}
 
 	public void testAjouterDe() {
