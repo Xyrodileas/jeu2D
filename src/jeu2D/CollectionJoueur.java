@@ -17,7 +17,7 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 	// Indice du nombre de Joueur dans la collection
 	private int nbJoueur;
 
-	//Tableau contenant la liste de Joueur
+	// Tableau contenant la liste de Joueur
 	private Vector<Joueur> ListeJoueur;
 
 	/**
@@ -29,19 +29,35 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 
 	/**
 	 * Accesseur de l'attribut nombre joueur
+	 * 
 	 * @return le nombre de joueur
 	 */
 	public int getNbJoueur() {
 		return nbJoueur;
 	}
+	
+	public Vector<Joueur>  getListeJoueur(){
+		return ListeJoueur;
+	}
 
 	/**
-	 * Permet d'ajouter un joueur 
+	 * Permet d'ajouter un joueur dans notre liste
+	 * 
 	 * @param joueur
+	 *            à ajouter
 	 */
 	public void ajouterJoueur(Joueur joueur) {
 		ListeJoueur.add(joueur);
 		nbJoueur++;
+	}
+	
+	/**
+	 * Permet de récupérer le dernier élément de la liste
+	 * @return le dernier élément de la liste
+	 */
+	public Joueur getJoueur(){
+		return ListeJoueur.lastElement();
+		
 	}
 
 	@Override
@@ -50,6 +66,9 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 
 			private int currentIndex = 0;
 
+			/**
+			 * Permet de savoir s'il exite un élément après l'élément actuel
+			 */
 			@Override
 			public boolean hasNext() {
 				boolean next = false;
@@ -64,13 +83,21 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 				return next;
 
 			}
+			
 
+
+			/**
+			 * Retourne l'élément suivant à la position courante
+			 */
 			@Override
 			public Joueur next() {
 				currentIndex++;
 				return ListeJoueur.elementAt(currentIndex);
 			}
 
+			/**
+			 * Enlève l'élément à la position courante
+			 */
 			@Override
 			public void remove() {
 

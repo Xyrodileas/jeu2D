@@ -19,7 +19,7 @@ public class CollectionJoueurTest {
 		Joueur JoueurTest = new Joueur("JoueurTest");
 		CollectionJoueur<Joueur> CollectionTest = new CollectionJoueur<Joueur>();
 		CollectionTest.ajouterJoueur(JoueurTest);
-
+		assertEquals(JoueurTest, CollectionTest.getJoueur());
 		assertEquals(CollectionTest.getNbJoueur(), 1);
 	}
 	
@@ -27,9 +27,13 @@ public class CollectionJoueurTest {
 	public void testgetNbJoueur() {
 		Joueur JoueurTest = new Joueur("JoueurTest");
 		CollectionJoueur<Joueur> CollectionTest = new CollectionJoueur<Joueur>();
+		assertEquals(CollectionTest.getNbJoueur(), 0);
 		CollectionTest.ajouterJoueur(JoueurTest);
-
-		assertEquals(CollectionTest.getNbJoueur(), 1);
+		CollectionTest.ajouterJoueur(JoueurTest);
+		CollectionTest.ajouterJoueur(JoueurTest);
+		CollectionTest.ajouterJoueur(JoueurTest);
+		assertEquals(CollectionTest.getNbJoueur(), 4);
+		
 	}
 
 	@Test
