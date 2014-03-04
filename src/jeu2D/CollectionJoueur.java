@@ -25,7 +25,7 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 	 */
 	public CollectionJoueur() {
 		ListeJoueur = new Vector<Joueur>();
-        nbJoueur = 0;
+		nbJoueur = 0;
 	}
 
 	/**
@@ -36,8 +36,8 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 	public int getNbJoueur() {
 		return nbJoueur;
 	}
-	
-	public Vector<Joueur>  getListeJoueur(){
+
+	public Vector<Joueur> getListeJoueur() {
 		return ListeJoueur;
 	}
 
@@ -51,14 +51,15 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 		ListeJoueur.add(joueur);
 		nbJoueur++;
 	}
-	
+
 	/**
 	 * Permet de r�cup�rer le dernier �l�ment de la liste
+	 * 
 	 * @return le dernier �l�ment de la liste
 	 */
-	public Joueur getJoueur(){
+	public Joueur getJoueur() {
 		return ListeJoueur.lastElement();
-		
+
 	}
 
 	@Override
@@ -68,7 +69,8 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 			private int currentIndex = -1;
 
 			/**
-			 * Permet de savoir s'il exite un �l�ment apr�s l'�l�ment actuel
+			 * Permet de savoir s'il exite un �l�ment apr�s l'�l�ment
+			 * actuel
 			 */
 			@Override
 			public boolean hasNext() {
@@ -84,8 +86,6 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 				return next;
 
 			}
-			
-
 
 			/**
 			 * Retourne l'�l�ment suivant � la position courante
