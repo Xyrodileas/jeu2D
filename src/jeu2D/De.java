@@ -136,7 +136,14 @@ public class De implements Comparable, Comparator{
 		 * @return comparateur(int)
 		 */
 	    public int compareTo(Object o) { //TODO Implémenter les méthodes de l'interface
-	    	
+
+            if(o instanceof Integer){
+                if(this.dernierResultat == o){
+                    return 1;
+                }
+                return 0;
+            }
+            else if (o instanceof De){
 	    	//On est obliger de caster l'element recu en (De) pour comparer
 	    	De objetRecuTmp= (De)o;
 	   
@@ -146,7 +153,13 @@ public class De implements Comparable, Comparator{
 	    	
 	       	//Sinon on retourne le r�sultat 0 = non identique.
 	    	return 0;
-	    }
+	        }
+            else
+                return -1;
+        }
+
+
+
 	    
 	    
 	    /**

@@ -1,15 +1,10 @@
 package testClasse;
 
-import static org.junit.Assert.*;
+import jeu2D.CollectionDes;
+import junit.framework.TestCase;
+import org.junit.Assert;
 
 import java.util.Iterator;
-
-import jeu2D.CollectionDes;
-import jeu2D.De;
-import junit.framework.TestCase;
-
-import org.junit.Assert;
-import org.junit.Test;
 
 /**
  * JUnit de Classe CollectionDes
@@ -53,14 +48,14 @@ public class CollectionDesTest extends TestCase  {
 		Object collection= new CollectionDes();									//Creation d'une collection
 		assertTrue(collection instanceof CollectionDes);						//Verifie si collection est une CollectionDes 
 	    ((CollectionDes)collection).ajouterDe(5);								//On ajoute un DE
-		assertEquals(((CollectionDes)collection).getNbrDes(), 1);				//On verifie si le de est bien ajouté
+		assertEquals(((CollectionDes)collection).getNbrDes(), 1);				//On verifie si le de est bien ajoutï¿½
 	}
 
 	
 	/**
 	 * Methode qui permet de tester
 	 * la methode getNbrDe pour savoir
-	 * si le nombre de de s'incrémente
+	 * si le nombre de de s'incrï¿½mente
 	 * convenablement
 	 */
 	public void testGetNbrDes() {
@@ -87,8 +82,8 @@ public class CollectionDesTest extends TestCase  {
 		Assert.assertTrue(iterateur2.hasNext());								//Test Si dispose d'un suivant Oui
 		Assert.assertNotNull(iterateur2.next());								//Test si le suivant n'est pas null ( dispose d'un de)
 		Assert.assertNotNull(iterateur2.next());								//Test si le suivant n'est pas null ( dispose d'un de)
-		Assert.assertTrue(iterateur2.hasNext()==false);							//Test si il a un suivant ( Normalement non car 3 elements dans la collection seulement)
-	
+		Assert.assertFalse(iterateur2.hasNext()); 						//Test si il a un suivant ( Normalement non car 3 elements dans la collection seulement)
+
 	}
 
 }

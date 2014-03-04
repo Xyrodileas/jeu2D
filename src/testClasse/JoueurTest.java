@@ -36,9 +36,9 @@ public class JoueurTest extends TestCase {
 		Joueur Patrick = new Joueur("Patrick");
 		Patrick.ajouterDe(6);
 		assertTrue(Patrick.getListeDes().ListeDe.get(0) instanceof De);
-		assertEquals(Patrick.getListeDes().ListeDe.get(0).getNbrFace(), 6);
+		assertEquals(((De) Patrick.getListeDes().ListeDe.get(0)).getNbrFace(), 6);
 		Patrick.ajouterDe(2);
-		assertEquals(Patrick.getListeDes().ListeDe.get(1).getNbrFace(), 2);
+		assertEquals(((De) Patrick.getListeDes().ListeDe.get(1)).getNbrFace(), 2);
 	}
 
 	public void testGetListeDes() {

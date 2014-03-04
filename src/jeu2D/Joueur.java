@@ -1,7 +1,7 @@
 package jeu2D;
 
 /**
- * La classe Joueur représente les joueurs du jeu Un joueur possède un nom et un
+ * La classe Joueur reprï¿½sente les joueurs du jeu Un joueur possï¿½de un nom et un
  * score comme attribut
  * 
  * @author David
@@ -16,7 +16,7 @@ public class Joueur implements Comparable {
 	// score du joueur
 	private int score;
 
-	// Dés du joueur
+	// Dï¿½s du joueur
 	private CollectionDes ListeDes;
 
 	/****** CONSTRUCTEUR ******/
@@ -26,14 +26,14 @@ public class Joueur implements Comparable {
 		ListeDes = new CollectionDes();
 	}
 
-	/****** MÉTHODES ******/
+	/****** Mï¿½THODES ******/
 
 	/****** ACCESSEURS ******/
 	
 	/**
-	 * Permet de savoir le nombre de dés que possède un joueur
+	 * Permet de savoir le nombre de dï¿½s que possï¿½de un joueur
 	 * 
-	 * @return le nombre de dé possédé par le joueur
+	 * @return le nombre de dï¿½ possï¿½dï¿½ par le joueur
 	 */
 	public int getNbrDes() {
 
@@ -41,9 +41,9 @@ public class Joueur implements Comparable {
 	}
 
 	/**
-	 * Accesseur de la liste de dés possédé par le joueur
+	 * Accesseur de la liste de dï¿½s possï¿½dï¿½ par le joueur
 	 * 
-	 * @return la liste de dés du joueur
+	 * @return la liste de dï¿½s du joueur
 	 */
 	public CollectionDes getListeDes() {
 		return this.ListeDes;
@@ -67,30 +67,34 @@ public class Joueur implements Comparable {
 		return nom;
 	}
 	
-	/****** AUTRES MÉTHODES ******/
+	/****** AUTRES Mï¿½THODES ******/
 
 	/**
-	 * Ajoute un dé à un joueur avec un nombre de face en paramètre
+	 * Ajoute un dï¿½ ï¿½ un joueur avec un nombre de face en paramï¿½tre
 	 * 
 	 * @param nbrFaces
-	 *            nombre de face du dé à ajouté
+	 *            nombre de face du dï¿½ ï¿½ ajoutï¿½
 	 */
 	public void ajouterDe(int nbrFaces) {
 		ListeDes.ajouterDe(nbrFaces);
 	}
 
+    public void ajouterDe(int nbrFaces, int nbrDe){
+        ListeDes.ajouterDe(nbrFaces, nbrDe);
+    }
+
 	/**
 	 * Ajoute un nombre au score actuel du joueur
 	 * 
 	 * @param x
-	 *            nombre à additionner avec le score actuel
+	 *            nombre ï¿½ additionner avec le score actuel
 	 */
 	public void ajouterScore(int x) {
 		this.score += x;
 	}
 
 	/**
-	 * Permet de mettre le score d'un joueur à zéro
+	 * Permet de mettre le score d'un joueur ï¿½ zï¿½ro
 	 */
 	public void resetScore() {
 		score = 0;
@@ -98,7 +102,7 @@ public class Joueur implements Comparable {
 
 	@Override
 	/**
-	 * Permet de comparer deux joueurs entre eux. Si ceux ci on le même nom et le même score alors ils sont considéré comme identique et la méthode retourne 1 sinon lq méthode retourne 0
+	 * Permet de comparer deux joueurs entre eux. Si ceux ci on le mï¿½me nom et le mï¿½me score alors ils sont considï¿½rï¿½ comme identique et la mï¿½thode retourne 1 sinon lq mï¿½thode retourne 0
 	 */
 	public int compareTo(Object o) {
 		Joueur joueurTemp = (Joueur) o;

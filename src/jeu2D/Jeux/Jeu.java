@@ -1,8 +1,10 @@
 package jeu2D.Jeux;
 
 import jeu2D.CollectionJoueur;
-import jeu2D.FabriqueJoueur;
 import jeu2D.Joueur;
+import org.omg.CosNaming._BindingIteratorImplBase;
+
+import java.util.Iterator;
 
 public abstract class Jeu{
 
@@ -13,10 +15,7 @@ public abstract class Jeu{
     public Jeu(){
         nbrTours = 0;
     }
-    public void AjouterJoueur(String nomJoueur){
-        ListeJoueurs.ajouterJoueur(FabriqueJoueur.nouveauJoueur(nomJoueur));
-    }
-
+    public abstract void AjouterJoueur(String nomJoueur);
     public abstract void calculScoreTours();
     public abstract Joueur calculerLeVainqueur();
 

@@ -1,9 +1,6 @@
 package jeu2D.Jeux;
 
-import jeu2D.De;
-import jeu2D.Joueur;
-
-import java.util.Iterator;
+import jeu2D.*;
 
 /**
  * Created by Alexis on 26/02/14.
@@ -16,15 +13,28 @@ public class Brunco extends Jeu{
         super();
     }
 
+    public void AjouterJoueur(String nomJoueur){
+        ListeJoueurs.ajouterJoueur(FabriqueJoueur.nouveauJoueur(nomJoueur));
+
+
+    }
+    public CollectionJoueur<Joueur> getJoueurs(){
+        return ListeJoueurs;
+    }
+
     public void calculScoreTours() {
         nbrTours +=1;
+        System.out.println("\nTours N°"+nbrTours+"\n -------");
         for(Joueur i : ListeJoueurs){
+            System.out.println("\n" + i.getNom() + ": ");
             int score = ToursBrunco(i);
             //On va ensuite ajouter le résultat au score du joueur
+            System.out.println("\nScore du Joueur : " + score + "\n");
             i.ajouterScore(score);
             //On passe au joueur suivant
 
         }
+        System.out.println("\nGagnant : " + calculerLeVainqueur().getNom());
 
     }
 
@@ -35,12 +45,21 @@ public class Brunco extends Jeu{
         for(int essai = 0; essai < 3; essai++){
             // On lance chaques dés
             resultat = lancerLesDes(leJoueur);
-
+            System.out.println("Essai "+ (essai+1) + " : ");
+            for(int x=0; x<resultat.length; x++)
+                System.out.print("Dé" + x + " : "+ resultat[x] + " ");
             // On vérifier les résultats
 
+            De[] tab = new De[3];
+            int index = 0;
             //Si on a 3 nombres égales, on va vérifier si c'est un brunco
-            if(resultat[0] == resultat[1] && resultat[1] == resultat[2]){
-                if(resultat[0] == nbrTours){ // Si c'est un brunco, on passe brunco à vrai
+            for(De d : (CollectionDes<De>) leJoueur.getListeDes()){
+                tab[index] = d;
+                index++;
+            }
+            //Si on a 3 nombres égales, on va vérifier si c'est un brunco
+            if(tab[0].compare(tab[1], tab[2])== 1){
+                if(tab[0].compareTo(nbrTours)==1){ // Si c'est un brunco, on passe brunco à vrai
                     score += 21;
                     break; // On stop la boucle des essais
                 }
@@ -48,27 +67,33 @@ public class Brunco extends Jeu{
                     score += 5;
             }
             else{ // Sinon, on vérifie simplement s'il y a des points à ajouer
-                resultatSansBrunco(resultat);
+                int sansbrunco = resultatSansBrunco(tab);
+                if(sansbrunco==0){
+                    break;
+                }
+                else
+                    score += sansbrunco;
             }
         }
         return score;
     }
 
     // Permet de réaliser un lancé de chaque dés possédé par le joueur
-    public int[] lancerLesDes(Joueur leJoueur) { //TODO N'importe quel joueur peut lancer les dés, vérifier qu'il existe
+    public int[] lancerLesDes(Joueur leJoueur) { //TODO Mettre cette méthode dans joueur
         int[] resultat = new int[leJoueur.getNbrDes()]; // Variable servant à stocké le resultat des lancés
         int index = 0;
-        for(Iterator<De> d = leJoueur.getListeDes().iterator(); d.hasNext(); index++){ //On parcours chacun des dés du joueur //TODO hasnext() needed
-            resultat[index] = d.next().LancerDe(); //On lance le dés, puis on stock le résultat du lancé
+        for(De d : (CollectionDes<De>) leJoueur.getListeDes()){ //On parcours chacun des dés du joueur
+            resultat[index] = d.LancerDe(); //On lance le dés, puis on stock le résultat du lancé
+            index += 1;
         }
         return resultat;
     }
 
     // Méthode vérifiant le nombre de points supplémentaire à ajouter
-    public int resultatSansBrunco(int[] lancers){
+    public int resultatSansBrunco(De[] lancers){
         int score = 0;
-        for(int x : lancers){
-            if(x == nbrTours){ //Si le lancé du dés correspond au numéro du tours, on ajoute un point
+        for(De x : lancers){
+            if (x.compareTo(nbrTours) == 1) { //Si le lanc&eacute; du d&eacute;s correspond au num&eacute;ro du tours, on ajoute un point
                 score += 1;
             }
         }

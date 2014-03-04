@@ -4,8 +4,8 @@ import java.util.Iterator;
 import java.util.Vector;
 
 /**
- * Cette classe correspond à la liste de Joueur dans le jeu en question. Pour
- * stocker cette liste nous utilisons un vector de plus la classe implémente
+ * Cette classe correspond ï¿½ la liste de Joueur dans le jeu en question. Pour
+ * stocker cette liste nous utilisons un vector de plus la classe implï¿½mente
  * Iterable
  * 
  * @author David
@@ -21,10 +21,11 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 	private Vector<Joueur> ListeJoueur;
 
 	/**
-	 * Constructeur par défaut qui initialise le vector
+	 * Constructeur par dï¿½faut qui initialise le vector
 	 */
 	public CollectionJoueur() {
 		ListeJoueur = new Vector<Joueur>();
+        nbJoueur = 0;
 	}
 
 	/**
@@ -44,7 +45,7 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 	 * Permet d'ajouter un joueur dans notre liste
 	 * 
 	 * @param joueur
-	 *            à ajouter
+	 *            ï¿½ ajouter
 	 */
 	public void ajouterJoueur(Joueur joueur) {
 		ListeJoueur.add(joueur);
@@ -52,8 +53,8 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 	}
 	
 	/**
-	 * Permet de récupérer le dernier élément de la liste
-	 * @return le dernier élément de la liste
+	 * Permet de rï¿½cupï¿½rer le dernier ï¿½lï¿½ment de la liste
+	 * @return le dernier ï¿½lï¿½ment de la liste
 	 */
 	public Joueur getJoueur(){
 		return ListeJoueur.lastElement();
@@ -64,10 +65,10 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 	public Iterator<Joueur> iterator() {
 		return new Iterator<Joueur>() {
 
-			private int currentIndex = 0;
+			private int currentIndex = -1;
 
 			/**
-			 * Permet de savoir s'il exite un élément après l'élément actuel
+			 * Permet de savoir s'il exite un ï¿½lï¿½ment aprï¿½s l'ï¿½lï¿½ment actuel
 			 */
 			@Override
 			public boolean hasNext() {
@@ -87,7 +88,7 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 
 
 			/**
-			 * Retourne l'élément suivant à la position courante
+			 * Retourne l'ï¿½lï¿½ment suivant ï¿½ la position courante
 			 */
 			@Override
 			public Joueur next() {
@@ -96,7 +97,7 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 			}
 
 			/**
-			 * Enlève l'élément à la position courante
+			 * Enlï¿½ve l'ï¿½lï¿½ment ï¿½ la position courante
 			 */
 			@Override
 			public void remove() {

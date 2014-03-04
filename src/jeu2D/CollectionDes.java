@@ -1,7 +1,5 @@
 package jeu2D;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Iterator;
 import java.util.Vector;
 
@@ -11,7 +9,7 @@ import java.util.Vector;
  * de stocker les des des joueurs
  *
  */
-public class CollectionDes implements Iterable<De> {
+public class CollectionDes<De> implements Iterable<De> {
 
 	public Vector<De> ListeDe;
 	private int nbrDes;
@@ -19,7 +17,7 @@ public class CollectionDes implements Iterable<De> {
 	
 	/**
 	 * Constructeur : CollectionDes
-	 * Permet de créer une collection vide de des
+	 * Permet de crï¿½er une collection vide de des
 	 * et indique le nombre de des=0
 	 */
     public CollectionDes(){
@@ -30,27 +28,34 @@ public class CollectionDes implements Iterable<De> {
 	
 	/**
 	 * Constructeur : CollectionDes
-	 * Permet de créer une collection vide de des
-	 * et indique le nombre de des=0
+	 * Permet de crï¿½er une collection avec des dÃ©s
 	 */
     public CollectionDes(int nbDe, int nbFaces){
         ListeDe = new Vector<De>() ;
         nbrDes=nbDe;
         for(int i=0;i<nbDe;i++)
-        	ListeDe.add(FabriqueDe.nouveauDe(nbDe, nbFaces)[i]); 
+        	ListeDe.add((De)FabriqueDe.nouveauDe(nbDe, nbFaces)[i]);
+
     }
     
     
    
     /**
-     * Permet d'ajouter un de à la collection
-     * selon le nombre de face souhaité
-     * @param int face
+     * Permet d'ajouter un de ï¿½ la collection
+     * selon le nombre de face souhaitï¿½
+     * @param faces
      */
-	public void ajouterDe(int faces) { // TODO Modifier pour prendre en compte le nombre de faces
-		ListeDe.add(FabriqueDe.nouveauDe(faces));
+	public void ajouterDe(int faces) {
+		ListeDe.add((De)FabriqueDe.nouveauDe(faces));
 		nbrDes++;
 	}
+    public void ajouterDe(int faces, int des){
+        De[] tab = (De[]) FabriqueDe.nouveauDe(des, faces);
+        for(int x = 0; x<tab.length; x++){
+            ListeDe.add(tab[x]);
+        }
+        nbrDes += des;
+    }
 
 	
 	/**
@@ -65,14 +70,14 @@ public class CollectionDes implements Iterable<De> {
 
 
 	/**
-	 * Permet d'instancier un itérateur
+	 * Permet d'instancier un itï¿½rateur
 	 * sur la Collection de De
 	 */
 	@Override
 	public Iterator<De> iterator() {
 		return new Iterator<De>() {
 
-			private int positionCourante = 0;
+			private int positionCourante = -1;
 
 			/**
 			 * Permet de retourner le De suivant dans
@@ -82,6 +87,7 @@ public class CollectionDes implements Iterable<De> {
 			 * 			si il n'y a pas de suivant il leve une exception qui directement gerer
 			 * 			en retournant un boolean false sinon si suivant existe alors retourne vrai
 			 */
+            @Override
 			public boolean hasNext()   {
 				try{
 					// dispose d'un suivant ou dans renvoie vrai
@@ -119,6 +125,7 @@ public class CollectionDes implements Iterable<De> {
 			 *  la position courante
 			 *  et de renvoyer l element ( le De)
 			 */
+            @Override
 			public De next() {
 				positionCourante++;
 				return ListeDe.elementAt(positionCourante);
@@ -133,7 +140,7 @@ public class CollectionDes implements Iterable<De> {
 				positionCourante--;
 				return ListeDe.elementAt(positionCourante);
 			}
-			
+
 			
 			
 			/**
@@ -141,7 +148,8 @@ public class CollectionDes implements Iterable<De> {
 			 * dans le vecteur
 			 * @return De
 			 */
-			public De getElementCourant() {
+
+			public De getElementCourant(){
 				return ListeDe.elementAt(positionCourante);
 			}
 
@@ -149,10 +157,12 @@ public class CollectionDes implements Iterable<De> {
 			
 			/**
 			 * Methode qui permet de supprimer
-			 * l'element à la position courante
+			 * l'element ï¿½ la position courante
 			 */
+            @Override
 			public void remove() {
 				ListeDe.remove(positionCourante);
+                this.positionCourante--;
 			}
 		};
 	}
