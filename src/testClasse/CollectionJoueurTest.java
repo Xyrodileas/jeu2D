@@ -1,15 +1,14 @@
 package testClasse;
 
-import static org.junit.Assert.*;
+import jeu2D.CollectionJoueur;
+import jeu2D.FabriqueJoueur;
+import jeu2D.Joueur;
+import junit.framework.Assert;
+import org.junit.Test;
 
 import java.util.Iterator;
 
-import jeu2D.CollectionDes;
-import jeu2D.CollectionJoueur;
-import jeu2D.De;
-import jeu2D.Joueur;
-
-import org.junit.Test;
+import static org.junit.Assert.*;
 
 public class CollectionJoueurTest {
 
@@ -27,7 +26,7 @@ public class CollectionJoueurTest {
 		assertEquals(JoueurTest, CollectionTest.getJoueur());
 		assertEquals(CollectionTest.getNbJoueur(), 1);
 	}
-
+	
 	@Test
 	public void testgetNbJoueur() {
 		Joueur JoueurTest = new Joueur("JoueurTest");
@@ -38,35 +37,30 @@ public class CollectionJoueurTest {
 		CollectionTest.ajouterJoueur(JoueurTest);
 		CollectionTest.ajouterJoueur(JoueurTest);
 		assertEquals(CollectionTest.getNbJoueur(), 4);
-
+		
 	}
 
 	@Test
-	public void testIterator() {
-		Joueur[] tabJoueur = { null, null, null };
-		Joueur JoueurTest0 = new Joueur("JoueurTest0");
-		Joueur JoueurTest1 = new Joueur("JoueurTest1");
-		Joueur JoueurTest2 = new Joueur("JoueurTest2");
+	public void testIterator() { 														//Fixe nbFaces =6
+        CollectionJoueur<Joueur> collection= new CollectionJoueur();						//Creation d'une collection
+        Joueur j1 = FabriqueJoueur.nouveauJoueur("Agent 007");
+        Joueur j2 = FabriqueJoueur.nouveauJoueur("Agent 006");
+        Joueur j3 = FabriqueJoueur.nouveauJoueur("Agent 005");
+        collection.ajouterJoueur(j1);
+        collection.ajouterJoueur(j2);
+        collection.ajouterJoueur(j3);
 
-		CollectionJoueur<Joueur> CollectionTest = new CollectionJoueur<Joueur>();
+        Iterator<Joueur> iterateur = ((CollectionJoueur)collection).iterator();				//Creation d'un iterateur de CollectionDes
+        assertTrue(iterateur instanceof  Iterator);								//Test Instance de Iterateur<De>
 
-		assertEquals(CollectionTest.getNbJoueur(), 0);
+        		//Creation d'un nouvel Iterator de la CollectionDe
 
-		CollectionTest.ajouterJoueur(JoueurTest0);
-		CollectionTest.ajouterJoueur(JoueurTest1);
-		CollectionTest.ajouterJoueur(JoueurTest2);
-		tabJoueur[0] = JoueurTest0;
-		tabJoueur[1] = JoueurTest1;
-		tabJoueur[2] = JoueurTest2;
+        Assert.assertTrue(iterateur.hasNext());								//Test Si dispose d'un suivant Oui
+        Assert.assertNotNull(iterateur.next());								//Test si le suivant n'est pas null ( dispose d'un de)
+        Assert.assertNotNull(iterateur.next());								//Test si le suivant n'est pas null ( dispose d'un de)
+        Assert.assertNotNull(iterateur.next());
+        Assert.assertFalse(iterateur.hasNext());       						//Test si il a un suivant ( Normalement non car 3 elements dans la collection seulement)
 
-		Iterator iterateur = ((CollectionJoueur) CollectionTest).iterator(); // Creation
-																				// d'un
-		assertTrue(iterateur instanceof Iterator);
-
-		for (int i = 0; i < 3; i++) {
-
-			assertEquals(tabJoueur[i].compareTo(iterateur.next()), 1);
-		}
-	}
+    }
 
 }

@@ -1,6 +1,7 @@
 package testClasse;
 
 import jeu2D.CollectionDes;
+import jeu2D.De;
 import junit.framework.TestCase;
 import org.junit.Assert;
 
@@ -72,9 +73,9 @@ public class CollectionDesTest extends TestCase  {
 	public void testIterator() {
 		int nbDe=3;																//Fixe nbDe=3
 		int nbFaces=6;															//Fixe nbFaces =6
-		Object collection= new CollectionDes(nbDe,nbFaces);						//Creation d'une collection	
+		CollectionDes<De> collection= new CollectionDes(nbDe,nbFaces);						//Creation d'une collection
 		
-		Object iterateur = ((CollectionDes)collection).iterator();				//Creation d'un iterateur de CollectionDes
+		Iterator<De> iterateur = ((CollectionDes)collection).iterator();				//Creation d'un iterateur de CollectionDes
 		assertTrue(iterateur instanceof  Iterator);								//Test Instance de Iterateur<De>
 		
 		Iterator iterateur2 = ((CollectionDes)collection).iterator();			//Creation d'un nouvel Iterator de la CollectionDe
@@ -82,7 +83,8 @@ public class CollectionDesTest extends TestCase  {
 		Assert.assertTrue(iterateur2.hasNext());								//Test Si dispose d'un suivant Oui
 		Assert.assertNotNull(iterateur2.next());								//Test si le suivant n'est pas null ( dispose d'un de)
 		Assert.assertNotNull(iterateur2.next());								//Test si le suivant n'est pas null ( dispose d'un de)
-		Assert.assertFalse(iterateur2.hasNext()); 						//Test si il a un suivant ( Normalement non car 3 elements dans la collection seulement)
+        Assert.assertNotNull(iterateur2.next());
+		Assert.assertFalse(iterateur2.hasNext());						//Test si il a un suivant ( Normalement non car 3 elements dans la collection seulement)
 
 	}
 

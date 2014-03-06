@@ -22,20 +22,22 @@ public class Brunco extends Jeu{
         return ListeJoueurs;
     }
 
-    public void calculScoreTours() {
+    public Joueur calculScoreTours() {
         nbrTours +=1;
-        System.out.println("\nTours N°"+nbrTours+"\n -------");
+        System.out.println("\nTours N°"+nbrTours+"\n----------------------------");
         for(Joueur i : ListeJoueurs){
             System.out.println("\n" + i.getNom() + ": ");
             int score = ToursBrunco(i);
             //On va ensuite ajouter le résultat au score du joueur
-            System.out.println("\nScore du Joueur : " + score + "\n");
+            System.out.println("\nScore du Tours : " + score + "\n");
             i.ajouterScore(score);
+            System.out.println("*****\nScore du Joueur : " + i.getScore() + "\n*****");
             //On passe au joueur suivant
 
         }
-        System.out.println("\nGagnant : " + calculerLeVainqueur().getNom());
-
+        Joueur gagnant = calculerLeVainqueur();
+        System.out.println("\nGagnant : " + gagnant.getNom());
+        return gagnant;
     }
 
     // Méthode permettant de réaliser un tour de jeu pour un joueur
@@ -45,9 +47,9 @@ public class Brunco extends Jeu{
         for(int essai = 0; essai < 3; essai++){
             // On lance chaques dés
             resultat = lancerLesDes(leJoueur);
-            System.out.println("Essai "+ (essai+1) + " : ");
+            System.out.println("\nEssai "+ (essai+1) + " : ");
             for(int x=0; x<resultat.length; x++)
-                System.out.print("Dé" + x + " : "+ resultat[x] + " ");
+                System.out.print( resultat[x] + " - ");
             // On vérifier les résultats
 
             De[] tab = new De[3];

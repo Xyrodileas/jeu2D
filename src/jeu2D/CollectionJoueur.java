@@ -25,7 +25,7 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 	 */
 	public CollectionJoueur() {
 		ListeJoueur = new Vector<Joueur>();
-		nbJoueur = 0;
+        nbJoueur = 0;
 	}
 
 	/**
@@ -36,8 +36,8 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 	public int getNbJoueur() {
 		return nbJoueur;
 	}
-
-	public Vector<Joueur> getListeJoueur() {
+	
+	public Vector<Joueur>  getListeJoueur(){ //TODO A TESTER
 		return ListeJoueur;
 	}
 
@@ -51,15 +51,14 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 		ListeJoueur.add(joueur);
 		nbJoueur++;
 	}
-
+	
 	/**
 	 * Permet de r�cup�rer le dernier �l�ment de la liste
-	 * 
 	 * @return le dernier �l�ment de la liste
 	 */
-	public Joueur getJoueur() {
+	public Joueur getJoueur(){
 		return ListeJoueur.lastElement();
-
+		
 	}
 
 	@Override
@@ -69,23 +68,20 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 			private int currentIndex = -1;
 
 			/**
-			 * Permet de savoir s'il exite un �l�ment apr�s l'�l�ment
-			 * actuel
+			 * Permet de savoir s'il exite un �l�ment apr�s l'�l�ment actuel
 			 */
 			@Override
 			public boolean hasNext() {
-				boolean next = false;
 				try {
 					if (ListeJoueur.elementAt(currentIndex + 1) != null)
-						next = true;
-					else
-						next = false;
+						return true;
+
 				} catch (ArrayIndexOutOfBoundsException e) {
-
 				}
-				return next;
-
+                return false;
 			}
+			
+
 
 			/**
 			 * Retourne l'�l�ment suivant � la position courante
@@ -100,7 +96,7 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 			 * Enl�ve l'�l�ment � la position courante
 			 */
 			@Override
-			public void remove() {
+			public void remove() { //TODO Tester
 
 				try {
 					ListeJoueur.remove(currentIndex);

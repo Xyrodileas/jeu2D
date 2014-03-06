@@ -7,7 +7,8 @@ import jeu2D.Jeux.Brunco;
 import jeu2D.Joueur;
 import junit.framework.Assert;
 import junit.framework.TestCase;
-import org.junit.Before;
+
+import java.util.Iterator;
 
 /**
  * Created by Alexis on 26/02/14.
@@ -15,13 +16,9 @@ import org.junit.Before;
 public class BruncoTest extends TestCase {
     Brunco BruncoTest;
 
-    @Before //TODO Ne marche pas
-    public void initialize(){
-        BruncoTest = new Brunco();
-    }
 
     public void testResultatSansBrunco() throws Exception {
-        Brunco BruncoTest = new Brunco();
+        BruncoTest = new Brunco();
         BruncoTest.setNbrTours(5); // On définie le numéro de tours à 5
         De[] LancersDe = new De[3];
         for(int x=0; x < 3; x++){
@@ -33,15 +30,18 @@ public class BruncoTest extends TestCase {
     }
 
     public void testCalculerLeVainqueur() throws Exception {
+        BruncoTest = new Brunco();
         BruncoTest.AjouterJoueur("John Doe");
         BruncoTest.AjouterJoueur("Garl Field");
         Joueur jtest = FabriqueJoueur.nouveauJoueur("John Doe");
-        Assert.assertEquals(jtest, BruncoTest.calculerLeVainqueur());
+        Assert.assertEquals(1, jtest.compareTo((Joueur) BruncoTest.calculerLeVainqueur()));
     }
 
-    public void testAjouterJoueur() throws Exception { //TODO testAjouterJoueur
+    public void testAjouterJoueur() throws Exception {
         BruncoTest = new Brunco();
         BruncoTest.AjouterJoueur("Neil Patrick Harris");
+        Iterator i = BruncoTest.getJoueurs().iterator();
+        Assert.assertEquals("Neil Patrick Harris", ((Joueur)i.next()).getNom());
 
 
     }
@@ -56,7 +56,13 @@ public class BruncoTest extends TestCase {
             System.out.println("Ajout de dés pour " + i.getNom());
             i.ajouterDe(6, 3);
         }
-        BruncoTest.calculScoreTours();
+        Joueur gagnant = BruncoTest.calculScoreTours();
+        Assert.assertTrue(gagnant.getNom()=="Neil Patrick Harris" | gagnant.getNom()=="John Doe" | gagnant.getNom()=="Garl Field");
+        gagnant = BruncoTest.calculScoreTours();
+        Assert.assertTrue(gagnant.getNom()=="Neil Patrick Harris" | gagnant.getNom()=="John Doe" | gagnant.getNom()=="Garl Field");
+        gagnant = BruncoTest.calculScoreTours();
+        Assert.assertTrue(gagnant.getNom()=="Neil Patrick Harris" | gagnant.getNom()=="John Doe" | gagnant.getNom()=="Garl Field");
+
     }
 
 

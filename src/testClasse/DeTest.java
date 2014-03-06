@@ -1,9 +1,9 @@
 package testClasse;
 
-import java.awt.Color;
-
 import jeu2D.De;
 import junit.framework.TestCase;
+
+import java.awt.*;
 
 public class DeTest extends TestCase {
 
@@ -71,7 +71,7 @@ public class DeTest extends TestCase {
 		assertTrue(((De)d).getDernierResultat()!=0 && ((De)d).getDernierResultat()<7); //Verifie si le dernier resultat est modifie
 	}
 
-	public void testCompareTo() {
+	public void testCompareTo() { //TODO Ajouter un test qui retourne -1
 		Object d1 = new De();//creation d un de
 		Object d2 = new De();//creation d un de
 		Object d3 = new De();//creation d un de

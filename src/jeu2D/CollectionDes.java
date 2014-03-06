@@ -100,24 +100,7 @@ public class CollectionDes<De> implements Iterable<De> {
 		}
 			
 			
-			/**
-			 * Permet de retourner le De precedent dans
-			 * le vecteur de De (Collection)
-			 * 
-			 * Consequent :
-			 * 			si il n'y a pas de suivant il leve une exception qui directement gerer
-			 * 			en retournant un boolean false sinon si precedent existe alors retourne vrai
-			 */
-			public boolean hasPrevious()   {
-				try{
-					// dispose d'un suivant ou dans renvoie vrai
-					if (ListeDe.elementAt(positionCourante - 1) != null)
-						 return true;
-				}
-				//Permet de gerer l'exception et renvoie null si pas de suivant
-			catch (ArrayIndexOutOfBoundsException e) {return false;}
-				return false;
-		}
+
 		
 
 			/**
@@ -130,28 +113,8 @@ public class CollectionDes<De> implements Iterable<De> {
 				positionCourante++;
 				return ListeDe.elementAt(positionCourante);
 			}
-			
-			/**
-			 * Permet de se positionner
-			 * avant la position courante
-			 *  et de renvoyer l element ( le De)
-			 */
-			public De previous() {
-				positionCourante--;
-				return ListeDe.elementAt(positionCourante);
-			}
 
-			
-			
-			/**
-			 * Methode qui permet de recupere l'element courant
-			 * dans le vecteur
-			 * @return De
-			 */
 
-			public De getElementCourant(){
-				return ListeDe.elementAt(positionCourante);
-			}
 
 			
 			
@@ -160,7 +123,7 @@ public class CollectionDes<De> implements Iterable<De> {
 			 * l'element � la position courante
 			 */
             @Override
-			public void remove() {
+			public void remove() { //TODO Tester la méthode
 				ListeDe.remove(positionCourante);
                 this.positionCourante--;
 			}

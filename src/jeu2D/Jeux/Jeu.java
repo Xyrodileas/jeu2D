@@ -2,9 +2,6 @@ package jeu2D.Jeux;
 
 import jeu2D.CollectionJoueur;
 import jeu2D.Joueur;
-import org.omg.CosNaming._BindingIteratorImplBase;
-
-import java.util.Iterator;
 
 public abstract class Jeu{
 
@@ -16,7 +13,7 @@ public abstract class Jeu{
         nbrTours = 0;
     }
     public abstract void AjouterJoueur(String nomJoueur);
-    public abstract void calculScoreTours();
+    public abstract Joueur calculScoreTours();
     public abstract Joueur calculerLeVainqueur();
 
     public int getNbrTours(){
