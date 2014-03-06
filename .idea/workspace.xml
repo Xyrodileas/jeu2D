@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="039ebb89-90e1-4819-b39e-b3e28bbd2eec" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Alexis\Documents\GitHub\jeu2D\src\jeu2D\IStrategie.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Alexis\Documents\GitHub\jeu2D\src\jeu2D\Strategie.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jeu2D/Jeux/Bunco.java" afterPath="$PROJECT_DIR$/src/jeu2D/Jeux/Bunco.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jeu2D/CollectionJoueur.java" afterPath="$PROJECT_DIR$/src/jeu2D/CollectionJoueur.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testClasse/CollectionJoueurTest.java" afterPath="$PROJECT_DIR$/src/testClasse/CollectionJoueurTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jeu2D.iws" />
@@ -26,7 +23,7 @@
     <SUITE FILE_PATH="coverage/jeu2D$BruncoTest_testCalculScoreTours.coverage" NAME="BruncoTest.testCalculScoreTours Coverage Results" MODIFIED="1394117229303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>testClasse.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/jeu2D$Tests.coverage" NAME="Tests Coverage Results" MODIFIED="1394142936681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/jeu2D$Tests.coverage" NAME="Tests Coverage Results" MODIFIED="1394143642812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>jeu2D.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/jeu2D$JeuTest_testCalculerLeVainqueur.coverage" NAME="JeuTest.testCalculerLeVainqueur Coverage Results" MODIFIED="1393372142612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -95,13 +92,13 @@
     <favorites_list name="jeu2D" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.52150536">
+    <splitter split-orientation="horizontal" split-proportion="0.77034557">
       <split-first>
         <leaf>
-          <file leaf-file-name="CollectionJoueur.java" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="CollectionJoueur.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/jeu2D/CollectionJoueur.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="68" column="0" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.77492875" vertical-offset="799" max-vertical-offset="2006">
+                <state line="68" column="0" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.0" vertical-offset="915" max-vertical-offset="2006">
                   <folding />
                 </state>
               </provider>
@@ -119,8 +116,72 @@
           <file leaf-file-name="CollectionJoueurTest.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/testClasse/CollectionJoueurTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="43" column="0" selection-start="1078" selection-end="1078" vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="1700">
-                  <folding />
+                <state line="99" column="0" selection-start="3303" selection-end="3303" vertical-scroll-proportion="0.0" vertical-offset="1486" max-vertical-offset="1955">
+                  <folding>
+                    <element signature="e#1231#1239#0" expanded="true" />
+                    <element signature="e#1895#1903#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Brunco.uml" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Brunco.uml">
+              <provider selected="true" editor-type-id="UmlEditorProvider">
+                <state>
+                  <ID>JAVA</ID>
+                  <OriginalElement />
+                  <nodes>
+                    <node x="337.75" y="782.0">jeu2D.Jeux.Bunco</node>
+                    <node x="356.0" y="541.0">jeu2D.Jeux.Jeu</node>
+                    <node x="589.0" y="0.0">jeu2D.CollectionDes</node>
+                    <node x="572.0" y="221.0">jeu2D.Joueur</node>
+                    <node x="" y="">jeu2D.FabriqueJoueur</node>
+                    <node x="4.0" y="501.0">jeu2D.De</node>
+                    <node x="287.0" y="251.0">jeu2D.CollectionJoueur</node>
+                    <node x="0.0" y="843.0">jeu2D.FabriqueDe</node>
+                  </nodes>
+                  <notes />
+                  <edges>
+                    <edge source="jeu2D.Joueur" target="jeu2D.CollectionDes">
+                      <point x="0.0" y="0.0" />
+                      <point x="0.0" y="0.0" />
+                    </edge>
+                    <edge source="jeu2D.Jeux.Bunco" target="jeu2D.Jeux.Jeu">
+                      <point x="63.75" y="-105.0" />
+                      <point x="0.0" y="75.5" />
+                    </edge>
+                    <edge source="jeu2D.FabriqueJoueur" target="jeu2D.Joueur">
+                      <point x="0.0" y="0.0" />
+                      <point x="0.0" y="0.0" />
+                    </edge>
+                    <edge source="jeu2D.Jeux.Jeu" target="jeu2D.CollectionJoueur">
+                      <point x="0.0" y="0.0" />
+                      <point x="0.0" y="0.0" />
+                    </edge>
+                    <edge source="jeu2D.FabriqueDe" target="jeu2D.De">
+                      <point x="0.0" y="0.0" />
+                      <point x="0.0" y="0.0" />
+                    </edge>
+                    <edge source="jeu2D.Jeux.Jeu" target="jeu2D.Joueur">
+                      <point x="0.0" y="0.0" />
+                      <point x="0.0" y="0.0" />
+                    </edge>
+                    <edge source="jeu2D.Jeux.Bunco" target="jeu2D.De">
+                      <point x="0.0" y="0.0" />
+                      <point x="0.0" y="0.0" />
+                    </edge>
+                  </edges>
+                  <settings layout="Hierarchic Group" zoom="0.5000000000000001" x="325.9999999999999" y="512.4545454545454" />
+                  <SelectedNodes />
+                  <Categories>
+                    <Category>Constructors</Category>
+                    <Category>Fields</Category>
+                    <Category>Methods</Category>
+                    <Category>Properties</Category>
+                  </Categories>
+                  <SCOPE>All</SCOPE>
+                  <VISIBILITY>private</VISIBILITY>
                 </state>
               </provider>
             </entry>
@@ -147,10 +208,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Bunco.java" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="Bunco.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/jeu2D/Jeux/Bunco.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="118" column="39" selection-start="4042" selection-end="4042" vertical-scroll-proportion="1.0854701" vertical-offset="1591" max-vertical-offset="2142">
+                <state line="118" column="39" selection-start="4042" selection-end="4042" vertical-scroll-proportion="0.0" vertical-offset="1591" max-vertical-offset="2142">
                   <folding />
                 </state>
               </provider>
@@ -174,10 +235,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Joueur.java" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="Joueur.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/jeu2D/Joueur.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="100" column="5" selection-start="1836" selection-end="1836" vertical-scroll-proportion="0.0" vertical-offset="1358" max-vertical-offset="1989">
+                <state line="100" column="5" selection-start="1836" selection-end="1836" vertical-scroll-proportion="3.6567507" vertical-offset="0" max-vertical-offset="1989">
                   <folding />
                 </state>
               </provider>
@@ -229,10 +290,10 @@
         <option value="$PROJECT_DIR$/src/jeu2D/IStrategie.java" />
         <option value="$PROJECT_DIR$/src/testClasse/BruncoTest.java" />
         <option value="$PROJECT_DIR$/src/testClasse/CollectionDesTest.java" />
-        <option value="$PROJECT_DIR$/src/testClasse/CollectionJoueurTest.java" />
         <option value="$PROJECT_DIR$/src/jeu2D/De.java" />
         <option value="$PROJECT_DIR$/src/jeu2D/Jeux/Bunco.java" />
         <option value="$PROJECT_DIR$/src/jeu2D/CollectionJoueur.java" />
+        <option value="$PROJECT_DIR$/src/testClasse/CollectionJoueurTest.java" />
       </list>
     </option>
   </component>
@@ -347,6 +408,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeu2D" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeu2D" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -365,7 +440,7 @@
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
-    <property name="SearchEverywhereHistory" value="la&#10;Re&#10;Assr" />
+    <property name="SearchEverywhereHistory" value="sc&#10;la&#10;Re&#10;Assr" />
     <property name="options.lastSelected" value="copyright.filetypes.JAVA" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.44647887" />
@@ -411,6 +486,129 @@
       <recent name="jeu2D" />
       <recent name="Jeux" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="Moments ago" ActionInfo="_Update">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated from server" />
+          <option name="myStatusName" value="Changed on server" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Updated" />
+            <option name="myStatusName" value="Changed" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Created" />
+            <option name="myStatusName" value="Created" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Graphique/GUI2D.java</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Graphique/JoueurGraphique.java</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Graphique/Menu2D.java</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Graphique/PanneauD.java</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Graphique/PanneauJoueurDe.java</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Graphique/TabScore.java</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/images/a.gif</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/images/b.gif</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/images/c.gif</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/images/d.gif</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/images/e.gif</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/images/f.gif</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Deleted" />
+            <option name="myStatusName" value="Deleted" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Restored" />
+            <option name="myStatusName" value="Will be restored" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Modified" />
+          <option name="myStatusName" value="Modified" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Skipped" />
+          <option name="myStatusName" value="Skipped" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with conflicts" />
+          <option name="myStatusName" value="Will be merged with conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with tree conflicts" />
+          <option name="myStatusName" value="Merged with tree conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with property conflicts" />
+          <option name="myStatusName" value="Will be merged with property conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged" />
+          <option name="myStatusName" value="Will be merged" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Not in repository" />
+          <option name="myStatusName" value="Not in repository" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally added" />
+          <option name="myStatusName" value="Locally added" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally removed" />
+          <option name="myStatusName" value="Locally removed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Switched" />
+          <option name="myStatusName" value="Switched" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
   </component>
   <component name="RunManager" selected="JUnit.Tests">
     <configuration default="false" name="JeuTest.testResultatSansBrunco" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -863,7 +1061,7 @@
       <workItem from="1394141346302" duration="45000" />
       <workItem from="1394141397688" duration="175000" />
       <workItem from="1394141609893" duration="389000" />
-      <workItem from="1394142007159" duration="997000" />
+      <workItem from="1394142007159" duration="2414000" />
     </task>
     <task id="LOCAL-00001" summary="Modification structure + template method">
       <created>1393426439573</created>
@@ -921,11 +1119,15 @@
       <created>1394142347191</created>
       <updated>1394142347191</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Modification methode resetScore&#10;+ suppression strategie et istrategie">
+      <created>1394143025798</created>
+      <updated>1394143025798</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60956000" />
+    <option name="totallyTimeSpent" value="62373000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -949,27 +1151,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08496732" sideWeight="0.32779455" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26384366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2630719" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16540785" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28267974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1570997" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1570997" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20751634" sideWeight="0.67220545" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08496732" sideWeight="0.67220545" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50490195" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22385621" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1007,7 +1209,8 @@
     <MESSAGE value="Ajout test Brunco (Le jeu marche)" />
     <MESSAGE value="Réparation&#10;" />
     <MESSAGE value="Correction Int - Integer&#10;Ajout methode resetScore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correction Int - Integer&#10;Ajout methode resetScore" />
+    <MESSAGE value="Modification methode resetScore&#10;+ suppression strategie et istrategie" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification methode resetScore&#10;+ suppression strategie et istrategie" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1361,13 +1564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/testClasse/CollectionJoueurTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1078" selection-end="1078" vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="1700">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/testClasse/CollectionDesTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="86" column="49" selection-start="3274" selection-end="3274" vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="1564">
@@ -1396,13 +1592,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jeu2D/Joueur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="5" selection-start="1836" selection-end="1836" vertical-scroll-proportion="0.0" vertical-offset="1358" max-vertical-offset="1989">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/jeu2D/De.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="143" column="25" selection-start="3133" selection-end="3133" vertical-scroll-proportion="0.0" vertical-offset="2062" max-vertical-offset="2975">
@@ -1410,17 +1599,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jeu2D/Jeux/Bunco.java">
+    <entry file="file://$PROJECT_DIR$/src/jeu2D/CollectionJoueur.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="39" selection-start="4042" selection-end="4042" vertical-scroll-proportion="1.0854701" vertical-offset="1591" max-vertical-offset="2142">
+        <state line="68" column="0" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.0" vertical-offset="915" max-vertical-offset="2006">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jeu2D/CollectionJoueur.java">
+    <entry file="file://$PROJECT_DIR$/src/jeu2D/Jeux/Bunco.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="0" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.77492875" vertical-offset="799" max-vertical-offset="2006">
+        <state line="118" column="39" selection-start="4042" selection-end="4042" vertical-scroll-proportion="0.0" vertical-offset="1591" max-vertical-offset="2142">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jeu2D/Joueur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="5" selection-start="1836" selection-end="1836" vertical-scroll-proportion="3.6567507" vertical-offset="0" max-vertical-offset="1989">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testClasse/CollectionJoueurTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="0" selection-start="3303" selection-end="3303" vertical-scroll-proportion="0.0" vertical-offset="1486" max-vertical-offset="1955">
+          <folding>
+            <element signature="e#1231#1239#0" expanded="true" />
+            <element signature="e#1895#1903#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/jeu2D.Jeux.Bunco">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>jeu2D.Jeux.Bunco</OriginalElement>
+          <nodes>
+            <node x="6.0" y="0.0">jeu2D.Jeux.Jeu</node>
+            <node x="0.0" y="78.0">jeu2D.Jeux.Bunco</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="jeu2D.Jeux.Bunco" target="jeu2D.Jeux.Jeu">
+              <point x="0.0" y="-14.0" />
+              <point x="0.0" y="14.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="38.5" y="145.5" />
+          <SelectedNodes>
+            <node>jeu2D.Jeux.Bunco</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Brunco.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="337.75" y="782.0">jeu2D.Jeux.Bunco</node>
+            <node x="356.0" y="541.0">jeu2D.Jeux.Jeu</node>
+            <node x="589.0" y="0.0">jeu2D.CollectionDes</node>
+            <node x="572.0" y="221.0">jeu2D.Joueur</node>
+            <node x="" y="">jeu2D.FabriqueJoueur</node>
+            <node x="4.0" y="501.0">jeu2D.De</node>
+            <node x="287.0" y="251.0">jeu2D.CollectionJoueur</node>
+            <node x="0.0" y="843.0">jeu2D.FabriqueDe</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="jeu2D.Joueur" target="jeu2D.CollectionDes">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="jeu2D.Jeux.Bunco" target="jeu2D.Jeux.Jeu">
+              <point x="63.75" y="-105.0" />
+              <point x="0.0" y="75.5" />
+            </edge>
+            <edge source="jeu2D.FabriqueJoueur" target="jeu2D.Joueur">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="jeu2D.Jeux.Jeu" target="jeu2D.CollectionJoueur">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="jeu2D.FabriqueDe" target="jeu2D.De">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="jeu2D.Jeux.Jeu" target="jeu2D.Joueur">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="jeu2D.Jeux.Bunco" target="jeu2D.De">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.5000000000000001" x="325.9999999999999" y="512.4545454545454" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Constructors</Category>
+            <Category>Fields</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>

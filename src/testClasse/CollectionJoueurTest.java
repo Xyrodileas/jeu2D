@@ -11,7 +11,7 @@ import java.util.Iterator;
 import static org.junit.Assert.*;
 
 /**
- * Classe de testant les méthodes de la classe CollectionJoueur
+ * Classe de testant les mï¿½thodes de la classe CollectionJoueur
  * 
  * @author David
  * 
@@ -21,7 +21,7 @@ public class CollectionJoueurTest {
 
 	/**
 	 * Permet de tester le constructeur de la classe CollectionJoueur en
-	 * s'assurant que le constructeur créait bien un objet du type
+	 * s'assurant que le constructeur crï¿½ait bien un objet du type
 	 * CollectionJoueur
 	 */
 	@Test
@@ -31,7 +31,7 @@ public class CollectionJoueurTest {
 	}
 
 	/**
-	 * Permet de tester la méthode ajouterJoueur.
+	 * Permet de tester la mï¿½thode ajouterJoueur.
 	 */
 	@Test
 	public void testAjouterJoueur() {
@@ -47,13 +47,36 @@ public class CollectionJoueurTest {
 		Joueur JoueurTest = new Joueur("JoueurTest");
 		CollectionJoueur<Joueur> CollectionTest = new CollectionJoueur<Joueur>();
 		assertEquals(CollectionTest.getNbJoueur(), 0);
+		CollectionTest.ajouterJoueur(JoueurTest); // On ajoute 4 joueurs
 		CollectionTest.ajouterJoueur(JoueurTest);
 		CollectionTest.ajouterJoueur(JoueurTest);
 		CollectionTest.ajouterJoueur(JoueurTest);
-		CollectionTest.ajouterJoueur(JoueurTest);
-		assertEquals(CollectionTest.getNbJoueur(), 4);
+		assertEquals(CollectionTest.getNbJoueur(), 4); // On vÃ©rifie que la collection contient bien 4 joueurs
 
 	}
+
+    @Test
+    public void testresetScore(){
+        Joueur J1 = new Joueur("Bob l'Eponge");
+        Joueur J2 = new Joueur("Alexandra");
+        Joueur J3 = new Joueur("ClÃ©opatre");
+        Joueur J4 = new Joueur("CÃ©sar");
+
+        CollectionJoueur<Joueur> CollectionTest = new CollectionJoueur<Joueur>();
+        CollectionTest.ajouterJoueur(J1); // On ajoute des joueurs
+        CollectionTest.ajouterJoueur(J2);
+        CollectionTest.ajouterJoueur(J3);
+        CollectionTest.ajouterJoueur(J4);
+        int score = 15;
+        for(Joueur i : CollectionTest){ // On parcours la liste des joueurs
+            i.ajouterScore(score);      // On y ajoute un score
+            score += 5;
+        }
+        CollectionTest.resetScore(); // On reset le score des joueurs
+        for(Joueur i : CollectionTest){ //On reparcours les joueurs
+            assertEquals(i.getScore(), 0); // On vÃ©rifie que le score est bien 0
+        }
+    }
 
 	@Test
 	public void testIterator() { // Fixe nbFaces =6
