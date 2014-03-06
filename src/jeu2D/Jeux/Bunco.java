@@ -115,4 +115,8 @@ public class Bunco extends Jeu{
         return gagnant;
     }
 
+    public void resetBrunco(){
+        this.ListeJoueurs.resetScore();
+    }
+
 }

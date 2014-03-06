@@ -63,7 +63,7 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 
     public void resetScore(){
         for(Joueur i : this){
-            //((Joueur)i).resetScore();
+            ((jeu2D.Joueur)i).resetScore();
         }
     }
 
