@@ -2,18 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="039ebb89-90e1-4819-b39e-b3e28bbd2eec" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Alexis\Documents\GitHub\jeu2D\src\jeu2D\IStrategie.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jeu2D/Jeux/Brunco.java" afterPath="$PROJECT_DIR$/src/jeu2D/Jeux/Brunco.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testClasse/BruncoTest.java" afterPath="$PROJECT_DIR$/src/testClasse/BruncoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jeu2D/CollectionDes.java" afterPath="$PROJECT_DIR$/src/jeu2D/CollectionDes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testClasse/CollectionDesTest.java" afterPath="$PROJECT_DIR$/src/testClasse/CollectionDesTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jeu2D/CollectionJoueur.java" afterPath="$PROJECT_DIR$/src/jeu2D/CollectionJoueur.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testClasse/CollectionJoueurTest.java" afterPath="$PROJECT_DIR$/src/testClasse/CollectionJoueurTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jeu2D/De.java" afterPath="$PROJECT_DIR$/src/jeu2D/De.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testClasse/DeTest.java" afterPath="$PROJECT_DIR$/src/testClasse/DeTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jeu2D/FabriqueDe.java" afterPath="$PROJECT_DIR$/src/jeu2D/FabriqueDe.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jeu2D/FabriqueJoueur.java" afterPath="$PROJECT_DIR$/src/jeu2D/FabriqueJoueur.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jeu2D/Jeux/Jeu.java" afterPath="$PROJECT_DIR$/src/jeu2D/Jeux/Jeu.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jeu2D.iws" />
@@ -109,7 +97,7 @@
           <file leaf-file-name="CollectionJoueur.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/jeu2D/CollectionJoueur.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="80" column="29" selection-start="1682" selection-end="1682" vertical-scroll-proportion="0.6964286" vertical-offset="1002" max-vertical-offset="1904">
+                <state line="103" column="40" selection-start="2085" selection-end="2085" vertical-scroll-proportion="0.7574257" vertical-offset="1360" max-vertical-offset="1904">
                   <folding />
                 </state>
               </provider>
@@ -176,7 +164,7 @@
           <file leaf-file-name="CollectionDes.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/jeu2D/CollectionDes.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="97" column="15" selection-start="2141" selection-end="2141" vertical-scroll-proportion="-0.1275" vertical-offset="1649" max-vertical-offset="2278">
+                <state line="97" column="15" selection-start="2141" selection-end="2141" vertical-scroll-proportion="-0.123786405" vertical-offset="1649" max-vertical-offset="2278">
                   <folding />
                 </state>
               </provider>
@@ -253,7 +241,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
+    <option name="STATE" value="2" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -268,7 +256,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -348,6 +335,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -372,21 +360,21 @@
     <property name="LayoutCode.rearrangeEntriesJava" value="true" />
     <property name="LayoutCode.rearrangeEntries" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="48" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="41" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="62" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="52" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="63" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="52" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="602" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="473" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="96" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="77" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="95" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="76" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="96" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="77" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="501" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="388" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -856,6 +844,8 @@
       <workItem from="1394061355079" duration="32000" />
       <workItem from="1394116348419" duration="4493000" />
       <workItem from="1394131332780" duration="42000" />
+      <workItem from="1394140928019" duration="2000" />
+      <workItem from="1394140930952" duration="33000" />
     </task>
     <task id="LOCAL-00001" summary="Modification structure + template method">
       <created>1393426439573</created>
@@ -909,7 +899,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59315000" />
+    <option name="totallyTimeSpent" value="59350000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -933,7 +923,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -945,16 +935,16 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50490195" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28267974" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26547232" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5302013" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26547232" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28267974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16087614" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16012084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3888889" sideWeight="0.5619335" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13595167" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -1408,14 +1398,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jeu2D/CollectionDes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="15" selection-start="2141" selection-end="2141" vertical-scroll-proportion="-0.1275" vertical-offset="1649" max-vertical-offset="2278">
+        <state line="97" column="15" selection-start="2141" selection-end="2141" vertical-scroll-proportion="-0.123786405" vertical-offset="1649" max-vertical-offset="2278">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jeu2D/CollectionJoueur.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="29" selection-start="1682" selection-end="1682" vertical-scroll-proportion="0.6964286" vertical-offset="1002" max-vertical-offset="1904">
+        <state line="103" column="40" selection-start="2085" selection-end="2085" vertical-scroll-proportion="0.7574257" vertical-offset="1360" max-vertical-offset="1904">
           <folding />
         </state>
       </provider>
