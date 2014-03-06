@@ -5,11 +5,11 @@ import jeu2D.*;
 /**
  * Created by Alexis on 26/02/14.
  */
-public class Brunco extends Jeu{
+public class Bunco extends Jeu{
 
 
 
-    public Brunco(){
+    public Bunco(){
         super();
     }
 

@@ -138,7 +138,7 @@ public class De implements Comparable, Comparator{
 	    public int compareTo(Object o) {
 
             if(o instanceof Integer){
-                if(this.dernierResultat == (int)o){
+                if(this.dernierResultat == (Integer)o){
                     return 1;
                 }
                 return 0;

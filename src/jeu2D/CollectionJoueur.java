@@ -61,6 +61,12 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 		
 	}
 
+    public void resetScore(){
+        for(Joueur i : this){
+            //((Joueur)i).resetScore();
+        }
+    }
+
 	@Override
 	public Iterator<Joueur> iterator() {
 		return new Iterator<Joueur>() {
