@@ -65,7 +65,7 @@ public class Jeu implements IStrategie {
 	 */
 	public void AjouterJoueur(String nomJoueur) {
 		ListeJoueurs.ajouterJoueur(FabriqueJoueur.nouveauJoueur(nomJoueur));
-
+        ListeJoueurs.getJoueur().ajouterDe(6,3);
 	}
 
 	/**
