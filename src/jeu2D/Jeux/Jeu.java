@@ -9,8 +9,6 @@ public abstract class Jeu{
 
     protected CollectionJoueur<Joueur> ListeJoueurs = new CollectionJoueur<Joueur>();
 
-    public CollectionJoueur<Joueur> getListeJoueurs() { return ListeJoueurs; }
-
     public Jeu(){
         nbrTours = 0;
     }
