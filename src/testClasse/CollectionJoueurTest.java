@@ -11,7 +11,7 @@ import java.util.Iterator;
 import static org.junit.Assert.*;
 
 /**
- * Classe de testant les méthodes de la classe CollectionJoueur
+ * Classe testant les méthodes de la classe CollectionJoueur
  * 
  * @author David
  * 
@@ -35,13 +35,20 @@ public class CollectionJoueurTest {
 	 */
 	@Test
 	public void testAjouterJoueur() {
+		//Création d'un joueur
 		Joueur JoueurTest = new Joueur("JoueurTest");
+		//Création d'une collection de joueur
 		CollectionJoueur<Joueur> CollectionTest = new CollectionJoueur<Joueur>();
+		//Ajout du joueur dans la collection
 		CollectionTest.ajouterJoueur(JoueurTest);
+		//Test si les joueur correspondent
 		assertEquals(JoueurTest, CollectionTest.getJoueur());
 		assertEquals(CollectionTest.getNbJoueur(), 1);
 	}
 
+	/**
+	 * Test si le nombre de joueur retourné est correct
+	 */
 	@Test
 	public void testgetNbJoueur() {
 		Joueur JoueurTest = new Joueur("JoueurTest");
@@ -55,6 +62,9 @@ public class CollectionJoueurTest {
 
 	}
 
+	/**
+	 * Test de la fonction de reset de score fonctionne come voulu
+	 */
     @Test
     public void testresetScore(){
         Joueur J1 = new Joueur("Bob l'Eponge");
@@ -78,6 +88,9 @@ public class CollectionJoueurTest {
         }
     }
 
+    /**
+     * Test du bon fonctionnement de l'itérator
+     */
 	@Test
 	public void testIterator() { // Fixe nbFaces =6
 		CollectionJoueur<Joueur> collection = new CollectionJoueur(); // Creation
