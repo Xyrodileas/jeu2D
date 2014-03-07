@@ -1,14 +1,14 @@
 package Graphique;
 
-import java.awt.BorderLayout;
-import java.awt.Dimension;
+import jeu2D.De;
+import jeu2D.Jeux.FabriqueJeu;
+import jeu2D.Jeux.Jeu;
+import jeu2D.Joueur;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
 
 public class GUI2D extends JFrame{
 	
@@ -20,28 +20,36 @@ public class GUI2D extends JFrame{
 		private JButton boutonLancerDes;
 		private JTable graphiqueScoreTableau;
 		private Menu2D menu;
-		private TabScore tabScore = new TabScore();
+		private TabScore tabScore;
 		private PanneauJoueurDe panneauRecap;
-		
-		//private Brunco jeuBrunco;
-		
-		
-	    public GUI2D() {
+		private Joueur gagnant;
+		public Jeu jeu;
+
+
+
+    public GUI2D() {
 	    	
 	        setTitle("Jeu 2D BUNCO");
 	        this.setLayout(new BorderLayout());
 	        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	        this.setPreferredSize(new Dimension(1300,600));
 	        this.pack();
-	        
-	        
-	        //jeuBrunco = new Brunco();
-	        
+            tabScore = new TabScore();
+
+
+            jeu = FabriqueJeu.NouveauJeu();
+            jeu.AjouterJoueur("Idriss");
+            jeu.AjouterJoueur("Alexis");
+            jeu.AjouterJoueur("David");
+
+            for(Joueur i : jeu.getJoueurs())
+	            tabScore.ajouterJoueur(i);
+
 	        menu= new Menu2D(this);
 	        this.setJMenuBar(menu);
 	        
 	        
-	        panneauD=new PanneauD();
+	        panneauD=new PanneauD(3);
 	        add(panneauD,BorderLayout.SOUTH);
 	       
 	        panneauRecap = new PanneauJoueurDe();
@@ -49,21 +57,11 @@ public class GUI2D extends JFrame{
 	        
 	        boutonLancerDes =new JButton("Lancer Des");
 	        boutonLancerDes.addActionListener(new LancerDes(this));
-	        
-	        //TEST
-	        JButton boutontest =new JButton("ChangerTour");
-	        boutontest.addActionListener(new ActionListener(){
-	        	
-	    			public void actionPerformed(ActionEvent arg0) {
-	    				tabScore.miseAjourDesTours(2, 4, 1000);
-	    				graphiqueScoreTableau.repaint();
-	    		    }
-	    	    });
+
 	        
 	        JPanel panneauLancerDes = new JPanel();
 	        
 	        panneauLancerDes.add(boutonLancerDes);
-	        panneauLancerDes.add(boutontest);
 	        add(panneauLancerDes,BorderLayout.CENTER);
 	       
 	        
@@ -82,18 +80,49 @@ public class GUI2D extends JFrame{
 	    
 	    
 	    public void reinitialiserTout(){
+            jeu.resetBrunco();
 	    	tabScore.reinitialiserTableau();
+
 	    	panneauD.reinitialiserBoutonNull();
 	    	panneauRecap.reinitialiserPanneauJoueurDe();
+            boutonLancerDes.setEnabled(true);
 		}
+
 	    
 	    public void lancerDes(){
-	    	int de1=(int) Math.floor(Math.random()* (6 - 1 + 1) + 1);
-	    	int de2=(int) Math.floor(Math.random()* (6 - 1 + 1) + 1);
-	    	int de3=(int) Math.floor(Math.random()* (6 - 1 + 1) + 1);
-	    	panneauD.lancerDes(de1, de2, de3);
-	    	panneauRecap.setValeur3D(de1, de2, de3);
-	    	
+	    	gagnant = jeu.calculScoreTours();
+            panneauRecap.setNomJoeurGagnantTour(gagnant.getNom());
+            int[] resultat = new int[3];
+            int index = 0;
+            int idjoueur = 0;
+            for(Joueur j : jeu.getJoueurs()){
+
+                for(De i : j.getListeDes()){
+                    resultat[index] = i.getDernierResultat();
+                    index++;
+
+                }
+                index = 0;
+                panneauD.lancerDes(idjoueur, resultat[0], resultat[1], resultat[2]);
+                idjoueur++;
+            }
+            if(jeu.getNbrTours() >=6){
+                boutonLancerDes.setEnabled(false);
+            }
+
+
+
+            index = 0;
+	    	for(Joueur i : jeu.getJoueurs()){
+                if(jeu.getNbrTours() == 0)
+                    tabScore.listeJoueurs.get(index).setScTour(jeu.getNbrTours(), i.getScore());
+                else
+                tabScore.listeJoueurs.get(index).setScTour(jeu.getNbrTours(), i.getScore()-tabScore.listeJoueurs.get(index).getTotal());
+
+                tabScore.listeJoueurs.get(index).setTotal(i.getScore());
+                index++;
+            }
+            graphiqueScoreTableau.repaint();
 	    }
 	    public void changeNomJoueur(){
 	    	//panneauRecap.setNomJoeur("Dupont");

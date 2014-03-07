@@ -21,33 +21,25 @@ public class Menu2D extends JMenuBar{
 	
 	private void addMenuJeuBrunco() {
 		
-		   		JMenu menuJeu = new JMenu(" Jeu ");
+		   		JMenu menuJeu = new JMenu(" IStrategie ");
 		 
-		   		JMenuItem demarrer = new JMenuItem("Demarrer");
-		   		demarrer.addActionListener(new ActionListener(){
-		        	
-	    			public void actionPerformed(ActionEvent arg0) {
-	    				System.out.println("Lancement du jeu");
-	    			
 
-	    				
-	    				// AJOUTER REMISE A ZERO BRANCO
-	    		    }
-	    	    });
 		   		JMenuItem reinitialiser = new JMenuItem("Reinitialiser");
 		   		
 		   		reinitialiser.addActionListener(new ActionListener(){
 		        	
 		    			public void actionPerformed(ActionEvent arg0) {
 		    				System.out.println("REINITIALISER BRUNCO");
+
+                            frame.jeu.resetBrunco();
+
 		    				frame.reinitialiserTout();
 		    				frame.rafraichirTableauGraphiqueJoueur();
 		    				
 		    				// AJOUTER REMISE A ZERO BRANCO
 		    		    }
 		    	    });
-		   		
-		   		menuJeu.add(demarrer);
+
 		   		menuJeu.add(reinitialiser);
 			   
 		   	  

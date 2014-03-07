@@ -1,12 +1,8 @@
 package Graphique;
 
-import java.awt.Color;
-import java.awt.GridLayout;
+import javax.swing.*;
+import java.awt.*;
 import java.io.File;
-
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JPanel;
 
 
   public class PanneauD extends JPanel  {
@@ -18,22 +14,22 @@ import javax.swing.JPanel;
 			//Tableau d image
 			ImageIcon[] tableau_image=new ImageIcon[6];
 			
-			DeGraphique[] tabBouttons;
+			DeGraphique[][] tabBouttons;
+            DeGraphique[] tabBouttons2;
+            DeGraphique[] tabBouttons3;
+            int joueurs;
 			
 			
-			public PanneauD(){
+			public PanneauD(int x){
 				
-				
+				joueurs = x;
 				creerIcon(tableau_image);
-				
-				tabBouttons=new DeGraphique[3];
-				
+                tabBouttons = new DeGraphique[joueurs][3];
+				for(int i=0; i<x; i++){
+				    //Creation du tableau de bouton selon image face du de
+				    creerTableauDeBoutton(tableau_image, tabBouttons[i]);
+                }
 
-				setLayout(new GridLayout(1,6));
-				
-				
-				//Creation du tableau de bouton selon image face du de
-				creerTableauDeBoutton(tableau_image, tabBouttons);
 				
 				
 				
@@ -41,34 +37,36 @@ import javax.swing.JPanel;
 			
 			
 			public void creerTableauDeBoutton(ImageIcon[] tableau_image,DeGraphique[] tableau_bouton){
-
-					for(int i = 0; i <3; i++){
-						tabBouttons[i] =new DeGraphique();
-						System.out.println(tableau_image[i]);
-						add(tabBouttons[i]);
-					}
+                        for(int i = 0; i <3; i++){
+                            tableau_bouton[i] =new DeGraphique();
+                            System.out.println(tableau_image[i]);
+                            add(tableau_bouton[i]);
+                        }
 					validate();
 					repaint();
 			}
 			
 			
-			public void lancerDes(int de1,int de2,int de3){
+			public void lancerDes(int i, int de1,int de2,int de3){
 
 				//this.reinitialiserBoutonNull();
-				
-				tabBouttons[0].setIcon(tableau_image[de1-1]);tabBouttons[0].setText(null);
-				tabBouttons[1].setIcon(tableau_image[de2-1]);tabBouttons[1].setText(null);
-				tabBouttons[2].setIcon(tableau_image[de3-1]);tabBouttons[2].setText(null);
-				validate();
-				repaint();
+
+                tabBouttons[i][0].setIcon(tableau_image[de1-1]);tabBouttons[i][0].setText(null);
+                tabBouttons[i][1].setIcon(tableau_image[de2-1]);tabBouttons[i][1].setText(null);
+                tabBouttons[i][2].setIcon(tableau_image[de3-1]);tabBouttons[i][2].setText(null);
+                validate();
+                repaint();
 			}
+
 			public void reinitialiserBoutonNull(){
-				
-				for(int i=0;i<tabBouttons.length;i++){
-					tabBouttons[i].setIcon(null);
-					tabBouttons[i].setText("De");
-					
-				}
+
+                for(int x =0; x<joueurs; x++){
+                    for(int i=0;i<tabBouttons[x].length;i++){
+                        tabBouttons[x][i].setIcon(null);
+                        tabBouttons[x][i].setText("De");
+
+                    }
+                }
 				validate();
 				repaint();
 			}

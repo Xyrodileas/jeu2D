@@ -55,7 +55,7 @@ public class Joueur implements Comparable {
 	 * 
 	 * @return la liste de d�s du joueur
 	 */
-	public CollectionDes getListeDes() {
+	public CollectionDes<De> getListeDes() {
 		return this.ListeDes;
 	}
 
