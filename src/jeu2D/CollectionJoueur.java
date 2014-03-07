@@ -1,3 +1,14 @@
+/******************************************************
+Cours:  LOG121
+Projet: laboratoire 2
+Nom du fichier: CollectionJoueur.java
+Date créé: 2014-02-28
+
+ *******************************************************
+ *@author Alexis Vuillaume, David Murat, Idriss Aissou, Naim Yahyaoui
+ *@date Hiver 2014
+ *******************************************************/
+
 package jeu2D;
 
 import java.util.Iterator;
@@ -5,12 +16,12 @@ import java.util.Vector;
 
 /**
  * Cette classe correspond � la liste de Joueur dans le jeu en question. Pour
- * stocker cette liste nous utilisons un vector de plus la classe impl�mente
+ * stocker cette liste nous utilisons un vector de plus la classe implémente
  * Iterable
  * 
- * @author David
  * 
  * @param <Joueur>
+ *            Nom du joueur qui va posséder la collecttion
  */
 public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 
@@ -25,7 +36,7 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 	 */
 	public CollectionJoueur() {
 		ListeJoueur = new Vector<Joueur>();
-        nbJoueur = 0;
+		nbJoueur = 0;
 	}
 
 	/**
@@ -36,8 +47,8 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 	public int getNbJoueur() {
 		return nbJoueur;
 	}
-	
-	public Vector<Joueur>  getListeJoueur(){ //TODO A TESTER
+
+	public Vector<Joueur> getListeJoueur() { // TODO A TESTER
 		return ListeJoueur;
 	}
 
@@ -51,21 +62,22 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 		ListeJoueur.add(joueur);
 		nbJoueur++;
 	}
-	
+
 	/**
-	 * Permet de r�cup�rer le dernier �l�ment de la liste
+	 * Permet de récupérer le dernier �l�ment de la liste
+	 * 
 	 * @return le dernier �l�ment de la liste
 	 */
-	public Joueur getJoueur(){
+	public Joueur getJoueur() {
 		return ListeJoueur.lastElement();
-		
+
 	}
 
-    public void resetScore(){
-        for(Joueur i : this){
-            ((jeu2D.Joueur)i).resetScore();
-        }
-    }
+	public void resetScore() {
+		for (Joueur i : this) {
+			((jeu2D.Joueur) i).resetScore();
+		}
+	}
 
 	@Override
 	public Iterator<Joueur> iterator() {
@@ -74,7 +86,7 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 			private int currentIndex = -1;
 
 			/**
-			 * Permet de savoir s'il exite un �l�ment apr�s l'�l�ment actuel
+			 * Permet de savoir s'il existe un �l�ment après l'�l�ment actuel
 			 */
 			@Override
 			public boolean hasNext() {
@@ -84,10 +96,8 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 
 				} catch (ArrayIndexOutOfBoundsException e) {
 				}
-                return false;
+				return false;
 			}
-			
-
 
 			/**
 			 * Retourne l'�l�ment suivant � la position courante
@@ -99,10 +109,10 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 			}
 
 			/**
-			 * Enl�ve l'�l�ment � la position courante
+			 * Enlàve l'élément � la position courante
 			 */
 			@Override
-			public void remove() { //TODO Tester
+			public void remove() {
 
 				try {
 					ListeJoueur.remove(currentIndex);

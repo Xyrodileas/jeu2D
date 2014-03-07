@@ -1,10 +1,20 @@
+/******************************************************
+Cours:  LOG121
+Projet: laboratoire 2
+Nom du fichier: Joueur.java
+Date créé: 2014-02-28
+
+ *******************************************************
+ *@author Alexis Vuillaume, David Murat, Idriss Aissou, Naim Yahyaoui
+ *@date Hiver 2014
+ *******************************************************/
+
 package jeu2D;
 
 /**
  * La classe Joueur repr�sente les joueurs du jeu Un joueur poss�de un nom et un
  * score comme attribut
  * 
- * @author David
  * 
  */
 public class Joueur implements Comparable {
@@ -29,7 +39,7 @@ public class Joueur implements Comparable {
 	/****** M�THODES ******/
 
 	/****** ACCESSEURS ******/
-	
+
 	/**
 	 * Permet de savoir le nombre de d�s que poss�de un joueur
 	 * 
@@ -66,7 +76,7 @@ public class Joueur implements Comparable {
 	public String getNom() {
 		return nom;
 	}
-	
+
 	/****** AUTRES M�THODES ******/
 
 	/**
@@ -79,9 +89,9 @@ public class Joueur implements Comparable {
 		ListeDes.ajouterDe(nbrFaces);
 	}
 
-    public void ajouterDe(int nbrFaces, int nbrDe){
-        ListeDes.ajouterDe(nbrFaces, nbrDe);
-    }
+	public void ajouterDe(int nbrFaces, int nbrDe) {
+		ListeDes.ajouterDe(nbrFaces, nbrDe);
+	}
 
 	/**
 	 * Ajoute un nombre au score actuel du joueur

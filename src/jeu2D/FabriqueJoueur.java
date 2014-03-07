@@ -1,19 +1,28 @@
+/******************************************************
+Cours:  LOG121
+Projet: laboratoire 2
+Nom du fichier: FabriqueJoueur.java
+Date crÃ©Ã©: 2014-02-28
+
+ *******************************************************
+ *@author Alexis Vuillaume, David Murat, Idriss Aissou, Naim Yahyaoui
+ *@date Hiver 2014
+ *******************************************************/
+
 package jeu2D;
 
 /**
- * Classe permettant de créer des Joueurs
- * 
- * @author David
- * 
+ * Classe permettant de crÃ©er des Joueurs
  */
 public class FabriqueJoueur {
 
 	/**
-	 * Méthode permettant de créer des Joueurs
+	 * MÃ©thode permettant de retourner une instance de joueur
 	 * 
 	 * @param nom
-	 *            du joueur à créer
-	 * @return le joueur créé
+	 *            du joueur Ã  crÃ©er
+	 * 
+	 * @return le joueur crÃ©Ã©
 	 */
 	public static Joueur nouveauJoueur(String nom) {
 		return new Joueur(nom);
