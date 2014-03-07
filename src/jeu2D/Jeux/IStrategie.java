@@ -13,6 +13,10 @@ package jeu2D.Jeux;
 
 import jeu2D.Joueur;
 
+/**
+ * Interface statégie suivant la norme du patron stratégie
+ * 
+ */
 public interface IStrategie {
 
 	public void AjouterJoueur(String nomJoueur);

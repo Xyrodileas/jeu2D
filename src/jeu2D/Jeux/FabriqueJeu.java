@@ -12,10 +12,15 @@ Date créé: 2014-02-28
 package jeu2D.Jeux;
 
 /**
- * Created by Alexis on 07/03/14.
+ * Permet de fabriquer des instances de jeu
+ *
  */
 public abstract class FabriqueJeu {
 
+	/**
+	 * Retourne une instance de jeu
+	 * @return instance du jeu créé
+	 */
 	public static Jeu NouveauJeu() {
 		return new Jeu();
 	}
