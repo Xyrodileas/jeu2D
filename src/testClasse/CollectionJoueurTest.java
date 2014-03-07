@@ -11,7 +11,7 @@ import java.util.Iterator;
 import static org.junit.Assert.*;
 
 /**
- * Classe de testant les mï¿½thodes de la classe CollectionJoueur
+ * Classe de testant les méthodes de la classe CollectionJoueur
  * 
  * @author David
  * 
@@ -21,7 +21,7 @@ public class CollectionJoueurTest {
 
 	/**
 	 * Permet de tester le constructeur de la classe CollectionJoueur en
-	 * s'assurant que le constructeur crï¿½ait bien un objet du type
+	 * s'assurant que le constructeur créait bien un objet du type
 	 * CollectionJoueur
 	 */
 	@Test
@@ -31,7 +31,7 @@ public class CollectionJoueurTest {
 	}
 
 	/**
-	 * Permet de tester la mï¿½thode ajouterJoueur.
+	 * Permet de tester la méthode ajouterJoueur.
 	 */
 	@Test
 	public void testAjouterJoueur() {
@@ -59,8 +59,8 @@ public class CollectionJoueurTest {
     public void testresetScore(){
         Joueur J1 = new Joueur("Bob l'Eponge");
         Joueur J2 = new Joueur("Alexandra");
-        Joueur J3 = new Joueur("ClÃ©opatre");
-        Joueur J4 = new Joueur("CÃ©sar");
+        Joueur J3 = new Joueur("Cleopatre");
+        Joueur J4 = new Joueur("Cesar");
 
         CollectionJoueur<Joueur> CollectionTest = new CollectionJoueur<Joueur>();
         CollectionTest.ajouterJoueur(J1); // On ajoute des joueurs
@@ -100,14 +100,14 @@ public class CollectionJoueurTest {
 
 		// Creation d'un nouvel Iterator de la CollectionDe
 
-		Assert.assertTrue(iterateur.hasNext()); // Test Si dispose d'un suivant
+		assertTrue(iterateur.hasNext()); // Test Si dispose d'un suivant
 												// Oui
-		Assert.assertNotNull(iterateur.next()); // Test si le suivant n'est pas
+		assertNotNull(iterateur.next()); // Test si le suivant n'est pas
 												// null ( dispose d'un de)
-		Assert.assertNotNull(iterateur.next()); // Test si le suivant n'est pas
+		assertNotNull(iterateur.next()); // Test si le suivant n'est pas
 												// null ( dispose d'un de)
-		Assert.assertNotNull(iterateur.next());
-		Assert.assertFalse(iterateur.hasNext()); // Test si il a un suivant (
+		assertNotNull(iterateur.next());
+		assertFalse(iterateur.hasNext()); // Test si il a un suivant (
 													// Normalement non car 3
 													// elements dans la
 													// collection seulement)
