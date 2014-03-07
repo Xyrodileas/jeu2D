@@ -5,6 +5,7 @@ import java.awt.Color;
 
 public class JoueurGraphique {
 	    private String nom;
+	    
 	    private int scTour1;
 	    private int scTour2;
 	    private int scTour3;

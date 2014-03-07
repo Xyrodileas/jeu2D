@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 import javax.swing.table.AbstractTableModel;
 
+import jeu2D.Joueur;
+
 public class TabScore extends AbstractTableModel {
     private JoueurGraphique[] tabJoueur=new JoueurGraphique [5];
     private ArrayList<JoueurGraphique> listeJoueurs = new ArrayList<JoueurGraphique>();
@@ -13,14 +15,15 @@ public class TabScore extends AbstractTableModel {
  
     public TabScore() {
     	
-    	initialiserTableauDeJoueur();
+    	//initialiserTableauDeJoueur();
 
     }
  
     
     //TEST APRES FAUT FAIRE SELON NB JOUEURS
-    public void initialiserTableauDeJoueur(){
+    public void initialiserTableauDeJoueur(Joueur[] tabJoueur){
     	
+    	//TEST
     	this.tabJoueur[0]=(new JoueurGraphique("j1",1,2,3,4,5,6));
     	this.tabJoueur[1]=(new JoueurGraphique("j2",1,2,3,4,5,6));
     	this.tabJoueur[2]=(new JoueurGraphique("j3",1,2,3,4,5,6));
@@ -28,7 +31,7 @@ public class TabScore extends AbstractTableModel {
     	this.tabJoueur[4]=(new JoueurGraphique("j5",1,2,3,4,5,6));
     
     	for(int i=0; i<tabJoueur.length;i++)
-    			listeJoueurs.add(tabJoueur[i]);
+    			listeJoueurs.add(null);
     }
     
     public void reinitialiserTableau(){
@@ -63,26 +66,26 @@ public class TabScore extends AbstractTableModel {
         return entetes.length;
     }
  
-    public String getColumnName(int columnIndex) {
-        return entetes[columnIndex];
+    public String getColumnName(int col) {
+        return entetes[col];
     }
  
-    public Object getValueAt(int rowIndex, int columnIndex) {
-        switch(columnIndex){
+    public Object getValueAt(int ligne, int col) {
+        switch(col){
             case 0:
-                return listeJoueurs.get(rowIndex).getNom();
+                return listeJoueurs.get(ligne).getNom();
             case 1:
-                return listeJoueurs.get(rowIndex).getScTour1();
+                return listeJoueurs.get(ligne).getScTour1();
             case 2:
-                return listeJoueurs.get(rowIndex).getScTour2();
+                return listeJoueurs.get(ligne).getScTour2();
             case 3:
-                return listeJoueurs.get(rowIndex).getScTour3();
+                return listeJoueurs.get(ligne).getScTour3();
             case 4:
-                return listeJoueurs.get(rowIndex).getScTour4();
+                return listeJoueurs.get(ligne).getScTour4();
             case 5:
-                return listeJoueurs.get(rowIndex).getScTour5();
+                return listeJoueurs.get(ligne).getScTour5();
             case 6:
-                return listeJoueurs.get(rowIndex).getScTour6();
+                return listeJoueurs.get(ligne).getScTour6();
             default:
                 return null;
         }

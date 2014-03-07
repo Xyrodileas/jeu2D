@@ -23,6 +23,17 @@ public class Menu2D extends JMenuBar{
 		
 		   		JMenu menuJeu = new JMenu(" Jeu ");
 		 
+		   		JMenuItem demarrer = new JMenuItem("Demarrer");
+		   		demarrer.addActionListener(new ActionListener(){
+		        	
+	    			public void actionPerformed(ActionEvent arg0) {
+	    				System.out.println("Lancement du jeu");
+	    			
+
+	    				
+	    				// AJOUTER REMISE A ZERO BRANCO
+	    		    }
+	    	    });
 		   		JMenuItem reinitialiser = new JMenuItem("Reinitialiser");
 		   		
 		   		reinitialiser.addActionListener(new ActionListener(){
@@ -31,14 +42,15 @@ public class Menu2D extends JMenuBar{
 		    				System.out.println("REINITIALISER BRUNCO");
 		    				frame.reinitialiserTout();
 		    				frame.rafraichirTableauGraphiqueJoueur();
-	
 		    				
 		    				// AJOUTER REMISE A ZERO BRANCO
 		    		    }
 		    	    });
 		   		
+		   		menuJeu.add(demarrer);
 		   		menuJeu.add(reinitialiser);
 			   
+		   	  
 			   add(menuJeu);
 		   
 	}

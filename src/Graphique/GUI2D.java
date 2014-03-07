@@ -96,8 +96,8 @@ public class GUI2D extends JFrame{
 	    	
 	    }
 	    public void changeNomJoueur(){
-	    	panneauRecap.setNomJoeur("Dupont");
-	    	tabScore.miseADuNomJoueur(2, "Norbert");
+	    	//panneauRecap.setNomJoeur("Dupont");
+	    	//tabScore.miseADuNomJoueur(2, "Norbert");
 	    	graphiqueScoreTableau.repaint();
 		}
 	    
