@@ -1,3 +1,14 @@
+/******************************************************
+Cours:  LOG121
+Projet: laboratoire 2
+Nom du fichier: CollectionJoueurTest.java
+Date crÃ©Ã©: 2014-02-28
+
+ *******************************************************
+ *@author Alexis Vuillaume, David Murat, Idriss Aissou, Naim Yahyaoui
+ *@date Hiver 2014
+ *******************************************************/
+
 package testClasse;
 
 import jeu2D.CollectionJoueur;
@@ -11,17 +22,14 @@ import java.util.Iterator;
 import static org.junit.Assert.*;
 
 /**
- * Classe testant les méthodes de la classe CollectionJoueur
- * 
- * @author David
+ * Classe testant les mÃ©thodes de la classe CollectionJoueur
  * 
  */
-
 public class CollectionJoueurTest {
 
 	/**
 	 * Permet de tester le constructeur de la classe CollectionJoueur en
-	 * s'assurant que le constructeur créait bien un objet du type
+	 * s'assurant que le constructeur crÃ©ait bien un objet du type
 	 * CollectionJoueur
 	 */
 	@Test
@@ -31,23 +39,23 @@ public class CollectionJoueurTest {
 	}
 
 	/**
-	 * Permet de tester la méthode ajouterJoueur.
+	 * Permet de tester la mÃ©thode ajouterJoueur.
 	 */
 	@Test
 	public void testAjouterJoueur() {
-		//Création d'un joueur
+		// CrÃ©ation d'un joueur
 		Joueur JoueurTest = new Joueur("JoueurTest");
-		//Création d'une collection de joueur
+		// CrÃ©ation d'une collection de joueur
 		CollectionJoueur<Joueur> CollectionTest = new CollectionJoueur<Joueur>();
-		//Ajout du joueur dans la collection
+		// Ajout du joueur dans la collection
 		CollectionTest.ajouterJoueur(JoueurTest);
-		//Test si les joueur correspondent
+		// Test si les joueur correspondent
 		assertEquals(JoueurTest, CollectionTest.getJoueur());
 		assertEquals(CollectionTest.getNbJoueur(), 1);
 	}
 
 	/**
-	 * Test si le nombre de joueur retourné est correct
+	 * Test si le nombre de joueur retournï¿½ est correct
 	 */
 	@Test
 	public void testgetNbJoueur() {
@@ -58,39 +66,41 @@ public class CollectionJoueurTest {
 		CollectionTest.ajouterJoueur(JoueurTest);
 		CollectionTest.ajouterJoueur(JoueurTest);
 		CollectionTest.ajouterJoueur(JoueurTest);
-		assertEquals(CollectionTest.getNbJoueur(), 4); // On vÃ©rifie que la collection contient bien 4 joueurs
+		assertEquals(CollectionTest.getNbJoueur(), 4); // On vÃ©rifie que la
+														// collection contient
+														// bien 4 joueurs
 
 	}
 
 	/**
 	 * Test de la fonction de reset de score fonctionne come voulu
 	 */
-    @Test
-    public void testresetScore(){
-        Joueur J1 = new Joueur("Bob l'Eponge");
-        Joueur J2 = new Joueur("Alexandra");
-        Joueur J3 = new Joueur("Cleopatre");
-        Joueur J4 = new Joueur("Cesar");
+	@Test
+	public void testresetScore() {
+		Joueur J1 = new Joueur("Bob l'Eponge");
+		Joueur J2 = new Joueur("Alexandra");
+		Joueur J3 = new Joueur("Cleopatre");
+		Joueur J4 = new Joueur("Cesar");
 
-        CollectionJoueur<Joueur> CollectionTest = new CollectionJoueur<Joueur>();
-        CollectionTest.ajouterJoueur(J1); // On ajoute des joueurs
-        CollectionTest.ajouterJoueur(J2);
-        CollectionTest.ajouterJoueur(J3);
-        CollectionTest.ajouterJoueur(J4);
-        int score = 15;
-        for(Joueur i : CollectionTest){ // On parcours la liste des joueurs
-            i.ajouterScore(score);      // On y ajoute un score
-            score += 5;
-        }
-        CollectionTest.resetScore(); // On reset le score des joueurs
-        for(Joueur i : CollectionTest){ //On reparcours les joueurs
-            assertEquals(i.getScore(), 0); // On vÃ©rifie que le score est bien 0
-        }
-    }
+		CollectionJoueur<Joueur> CollectionTest = new CollectionJoueur<Joueur>();
+		CollectionTest.ajouterJoueur(J1); // On ajoute des joueurs
+		CollectionTest.ajouterJoueur(J2);
+		CollectionTest.ajouterJoueur(J3);
+		CollectionTest.ajouterJoueur(J4);
+		int score = 15;
+		for (Joueur i : CollectionTest) { // On parcours la liste des joueurs
+			i.ajouterScore(score); // On y ajoute un score
+			score += 5;
+		}
+		CollectionTest.resetScore(); // On reset le score des joueurs
+		for (Joueur i : CollectionTest) { // On reparcours les joueurs
+			assertEquals(i.getScore(), 0); // On vÃ©rifie que le score est bien 0
+		}
+	}
 
-    /**
-     * Test du bon fonctionnement de l'itérator
-     */
+	/**
+	 * Test du bon fonctionnement de l'itï¿½rator
+	 */
 	@Test
 	public void testIterator() { // Fixe nbFaces =6
 		CollectionJoueur<Joueur> collection = new CollectionJoueur(); // Creation
@@ -114,16 +124,16 @@ public class CollectionJoueurTest {
 		// Creation d'un nouvel Iterator de la CollectionDe
 
 		assertTrue(iterateur.hasNext()); // Test Si dispose d'un suivant
-												// Oui
+											// Oui
 		assertNotNull(iterateur.next()); // Test si le suivant n'est pas
-												// null ( dispose d'un de)
+											// null ( dispose d'un de)
 		assertNotNull(iterateur.next()); // Test si le suivant n'est pas
-												// null ( dispose d'un de)
+											// null ( dispose d'un de)
 		assertNotNull(iterateur.next());
 		assertFalse(iterateur.hasNext()); // Test si il a un suivant (
-													// Normalement non car 3
-													// elements dans la
-													// collection seulement)
+											// Normalement non car 3
+											// elements dans la
+											// collection seulement)
 
 	}
 

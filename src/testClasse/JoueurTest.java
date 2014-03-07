@@ -1,3 +1,14 @@
+/******************************************************
+Cours:  LOG121
+Projet: laboratoire 2
+Nom du fichier: JoueurTest.java
+Date crÃ©Ã©: 2014-02-28
+
+ *******************************************************
+ *@author Alexis Vuillaume, David Murat, Idriss Aissou, Naim Yahyaoui
+ *@date Hiver 2014
+ *******************************************************/
+
 package testClasse;
 
 import jeu2D.CollectionDes;
@@ -6,16 +17,15 @@ import jeu2D.Joueur;
 import junit.framework.TestCase;
 
 /**
- * Cette classe permet de tester la classe Joueur grâce à JUnit
+ * Cette classe permet de tester la classe Joueur grï¿½ce ï¿½ JUnit
  * 
- * @author David
  * 
  */
 public class JoueurTest extends TestCase {
 
 	/**
-	 * Test si ce constructeur créait bien un objet de type Joueur avec le nom
-	 * qui lui est passé en paramètre
+	 * Test si ce constructeur crï¿½ait bien un objet de type Joueur avec le nom
+	 * qui lui est passï¿½ en paramï¿½tre
 	 */
 	public void testJoueur() {
 		Joueur Patrick = new Joueur("Patrick");
@@ -25,7 +35,8 @@ public class JoueurTest extends TestCase {
 	}
 
 	/**
-	 * Test si le score ajouté est bien le bon et si l'accesseur du score est correct
+	 * Test si le score ajoutï¿½ est bien le bon et si l'accesseur du score est
+	 * correct
 	 */
 	public void testAjouterScore() {
 		Joueur Patrick = new Joueur("Patrick");
@@ -34,7 +45,7 @@ public class JoueurTest extends TestCase {
 	}
 
 	/**
-	 * Test de la méthode permettant de savoir le nombre de dés d'un joueur
+	 * Test de la mï¿½thode permettant de savoir le nombre de dï¿½s d'un joueur
 	 * fonctionne
 	 */
 	public void testNbrDes() {
@@ -46,9 +57,9 @@ public class JoueurTest extends TestCase {
 	}
 
 	/**
-	 * Ici on test si l'ajout d'un dé fonctionne pour un joueur, si l'accesseur
-	 * de la liste de dé d'un joueur fonctionne et si l'accesseur du nombre de
-	 * face d'un dé fonctionne aussi
+	 * Ici on test si l'ajout d'un dï¿½ fonctionne pour un joueur, si l'accesseur
+	 * de la liste de dï¿½ d'un joueur fonctionne et si l'accesseur du nombre de
+	 * face d'un dï¿½ fonctionne aussi
 	 */
 	public void testAjouterDe() {
 		Joueur Patrick = new Joueur("Patrick");
@@ -62,7 +73,8 @@ public class JoueurTest extends TestCase {
 	}
 
 	/**
-	 * Test si la fonction getListeDes renvoie bien un objet de type CollectionDes
+	 * Test si la fonction getListeDes renvoie bien un objet de type
+	 * CollectionDes
 	 */
 	public void testGetListeDes() {
 		Joueur Patrick = new Joueur("Patrick");
@@ -70,7 +82,7 @@ public class JoueurTest extends TestCase {
 	}
 
 	/**
-	 * Test si le score renvoyé est bien le bon
+	 * Test si le score renvoyï¿½ est bien le bon
 	 */
 	public void testGetScore() {
 		Joueur Patrick = new Joueur("Patrick");
@@ -89,7 +101,7 @@ public class JoueurTest extends TestCase {
 	}
 
 	/**
-	 * Test si la méthode de comparaison de deux Joueur fonctionne
+	 * Test si la mï¿½thode de comparaison de deux Joueur fonctionne
 	 */
 	public void testCompareTo() {
 		Joueur David = new Joueur("David");
