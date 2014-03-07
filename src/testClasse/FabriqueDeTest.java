@@ -1,3 +1,15 @@
+/******************************************************
+Cours:  LOG121
+Projet: laboratoire 2
+Nom du fichier: FabriqueDeTest.java
+Date crÃ©Ã©: 2014-02-28
+
+ *******************************************************
+ *@author Alexis Vuillaume, David Murat, Idriss Aissou, Naim Yahyaoui
+ *@date Hiver 2014
+ *******************************************************/
+
+
 package testClasse;
 
 import jeu2D.De;
@@ -9,13 +21,12 @@ import junit.framework.TestCase;
  * JUnit de la Classe FabriqueDe
  * Permet de tester
  * la classe FabriqueDe et l'ensemble des methodes
- * @author i7
  *
  */
 public class FabriqueDeTest extends TestCase {
 
 	/**
-	 * JUnit test la méthode nouveauDe()
+	 * JUnit test la mï¿½thode nouveauDe()
 	 * de la classe FabriqueDe
 	 */
 	public void testNouveauDe() {
@@ -28,7 +39,7 @@ public class FabriqueDeTest extends TestCase {
 
 	
 	/**
-	 * JUnit test la méthode nouveauDe(int nbrFace)
+	 * JUnit test la mï¿½thode nouveauDe(int nbrFace)
 	 * en construisant un de 
 	 * selon un nombre de face souhaite
 	 * de la classe FabriqueDe
@@ -43,7 +54,7 @@ public class FabriqueDeTest extends TestCase {
 
 	
 	/**
-	 * JUnit test la méthode nouveauDe(int nbrDe ,int nbrFace)
+	 * JUnit test la mï¿½thode nouveauDe(int nbrDe ,int nbrFace)
 	 * en construisant le nombre de de souhaite dans un tableau de de
 	 * selon un nombre de face souhaite
 	 * de la classe FabriqueDe
