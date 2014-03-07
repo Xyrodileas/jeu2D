@@ -36,14 +36,14 @@ public class Joueur implements Comparable {
 		ListeDes = new CollectionDes();
 	}
 
-	/****** M�THODES ******/
+	/****** MÉTHODES ******/
 
 	/****** ACCESSEURS ******/
 
 	/**
-	 * Permet de savoir le nombre de d�s que poss�de un joueur
+	 * Permet de savoir le nombre de dés que posséde un joueur
 	 * 
-	 * @return le nombre de d� poss�d� par le joueur
+	 * @return le nombre de dés possédé par le joueur
 	 */
 	public int getNbrDes() {
 
@@ -51,7 +51,7 @@ public class Joueur implements Comparable {
 	}
 
 	/**
-	 * Accesseur de la liste de d�s poss�d� par le joueur
+	 * Accesseur de la liste de dés possédé par le joueur
 	 * 
 	 * @return la liste de d�s du joueur
 	 */
@@ -80,10 +80,10 @@ public class Joueur implements Comparable {
 	/****** AUTRES M�THODES ******/
 
 	/**
-	 * Ajoute un d� � un joueur avec un nombre de face en param�tre
+	 * Ajoute un dé à un joueur avec un nombre de face en paramètre
 	 * 
 	 * @param nbrFaces
-	 *            nombre de face du d� � ajout�
+	 *            nombre de face du dé à ajouter
 	 */
 	public void ajouterDe(int nbrFaces) {
 		ListeDes.ajouterDe(nbrFaces);
@@ -104,7 +104,7 @@ public class Joueur implements Comparable {
 	}
 
 	/**
-	 * Permet de mettre le score d'un joueur � z�ro
+	 * Permet de mettre le score d'un joueur à zéro
 	 */
 	public void resetScore() {
 		score = 0;
@@ -112,7 +112,7 @@ public class Joueur implements Comparable {
 
 	@Override
 	/**
-	 * Permet de comparer deux joueurs entre eux. Si ceux ci on le m�me nom et le m�me score alors ils sont consid�r� comme identique et la m�thode retourne 1 sinon lq m�thode retourne 0
+	 * Permet de comparer deux joueurs entre eux. Si ceux ci on le m�me nom et le m�me score alors ils sont considérécomme identique et la m�thode retourne 1 sinon lq m�thode retourne 0
 	 */
 	public int compareTo(Object o) {
 		Joueur joueurTemp = (Joueur) o;
