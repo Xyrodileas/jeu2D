@@ -111,7 +111,7 @@ public class Jeu implements IStrategie {
 
 		int score = 0; // Va contenir le score pour le tours du joueur
 
-		for (int essai = 0; essai < 3; essai++) {
+		for (int essai = 0; essai < 50; essai++) {
 			// On lance chaques dés
 			resultat = lancerLesDes(leJoueur);
 			System.out.println("\nEssai " + (essai + 1) + " : ");
@@ -216,6 +216,7 @@ public class Jeu implements IStrategie {
 	 */
 	public void resetBrunco() {
 		this.ListeJoueurs.resetScore();
+        this.nbrTours = 0;
 	}
 
 }
