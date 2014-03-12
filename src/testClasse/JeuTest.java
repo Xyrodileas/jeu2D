@@ -12,7 +12,6 @@ Date créé: 2014-02-28
 
 package testClasse;
 
-import jeu2D.CollectionJoueur;
 import jeu2D.De;
 import jeu2D.FabriqueJoueur;
 import jeu2D.Jeux.Jeu;
@@ -70,10 +69,6 @@ public class JeuTest extends TestCase {
 		jeuTest.AjouterJoueur("John Doe");
 		jeuTest.AjouterJoueur("Garl Field");
 
-		for (Joueur i : (CollectionJoueur<Joueur>) jeuTest.getJoueurs()) {
-			System.out.println("Ajout de dés pour " + i.getNom());
-			i.ajouterDe(6, 3);
-		}
 		Joueur gagnant = jeuTest.calculScoreTours();
 		Assert.assertTrue(gagnant.getNom() == "Neil Patrick Harris"
 				| gagnant.getNom() == "John Doe"
@@ -103,4 +98,24 @@ public class JeuTest extends TestCase {
 		jeuTest = new Jeu();
 		Assert.assertTrue(jeuTest.getNbrTours() == 0);
 	}
+
+    public void testresultatBunco(){
+        De d1 = new De(6);
+        De d2 = new De(6);
+        De d3 = new De(6);
+        d1.setDernierResultat(1);
+        d2.setDernierResultat(1);
+        d3.setDernierResultat(1);
+        Jeu jeutest = new Jeu();
+        De[] tab = new  De[]{d1, d2, d3};
+        Assert.assertEquals(21 ,jeutest.resultatBunco(tab, 1));
+        d1.setDernierResultat(2);
+        d2.setDernierResultat(2);
+        d3.setDernierResultat(2);
+        Assert.assertEquals(5 ,jeutest.resultatBunco(tab, 1));
+        d1.setDernierResultat(1);
+        d2.setDernierResultat(2);
+        d3.setDernierResultat(3);
+        Assert.assertEquals(0 ,jeutest.resultatBunco(tab, 1));
+    }
 }

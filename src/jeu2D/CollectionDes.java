@@ -115,7 +115,7 @@ public class CollectionDes<De> implements Iterable<De> {
 			 * Methode qui permet de supprimer l'element � la position courante
 			 */
 			@Override
-			public void remove() { // TODO Tester la méthode
+			public void remove() {
 				ListeDe.remove(positionCourante);
 				this.positionCourante--;
 			}

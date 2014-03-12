@@ -110,7 +110,7 @@ public class DeTest extends TestCase {
 														// resultat est modifie
 	}
 
-	public void testCompareTo() { // TODO Ajouter un test qui retourne -1
+	public void testCompareTo() {
 		Object d1 = new De();// creation d un de
 		Object d2 = new De();// creation d un de
 		Object d3 = new De();// creation d un de
@@ -122,6 +122,8 @@ public class DeTest extends TestCase {
 		assertTrue(((De) d1).compareTo(((De) d3)) == 0); // Compare si d1 et d3
 															// sont identique
 															// normalement non
+        String test = new String();
+        assertTrue(((De) d1).compareTo(test) == -1); // On vérifie que le retours est bien -1
 	}
 
 	public void testCompare() {

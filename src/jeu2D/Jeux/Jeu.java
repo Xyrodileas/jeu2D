@@ -202,9 +202,7 @@ public class Jeu implements IStrategie {
         if (lancers[0].compare(lancers[1], lancers[2]) == 1) {
             // Si c'est un brunco, on ajout 21 points au joueur
             if (lancers[0].compareTo(tour) == 1) {
-
                 return 21;
-
             }
             else{
                 // Si c'est n'est pas un brunco, mais qu'on possède 3

@@ -48,7 +48,7 @@ public class CollectionJoueur<Joueur> implements Iterable<Joueur> {
 		return nbJoueur;
 	}
 
-	public Vector<Joueur> getListeJoueur() { // TODO A TESTER
+	public Vector<Joueur> getListeJoueur() {
 		return ListeJoueur;
 	}
 
