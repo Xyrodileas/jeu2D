@@ -18,14 +18,33 @@ import jeu2D.Joueur;
  * 
  */
 public interface IStrategie {
-
+    /**
+     * Méthode permettant d'ajouter un joueur
+     * @param nomJoueur
+     */
 	public void AjouterJoueur(String nomJoueur);
 
+    /**
+     * Méthode de calcul du score d'un joueur
+     * @return
+     */
 	public Joueur calculScoreTours();
 
+    /**
+     * Méthode de calcul du vainqueur
+     * @return
+     */
 	public Joueur calculerLeVainqueur();
 
+    /**
+     * Méthode permettant de récupérer le numéro du tour
+     * @return
+     */
 	public int getNbrTours();
 
+    /**
+     * Méthode permettant de changer le numéro du tour
+     * @param nbrTours
+     */
 	public void setNbrTours(int nbrTours);
 }

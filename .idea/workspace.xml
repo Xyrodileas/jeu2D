@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="039ebb89-90e1-4819-b39e-b3e28bbd2eec" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jeu2D/Jeux/IStrategie.java" afterPath="$PROJECT_DIR$/src/jeu2D/Jeux/IStrategie.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jeu2D/Jeux/Jeu.java" afterPath="$PROJECT_DIR$/src/jeu2D/Jeux/Jeu.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -83,7 +84,25 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <method_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <method_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/jeu2D/Jeux/Jeu.java" line="199" class="jeu2D.Jeux.Jeu" package="jeu2D.Jeux">
+        <option name="WATCH_ENTRY" value="true" />
+        <option name="WATCH_EXIT" value="true" />
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </method_breakpoints>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/src/Graphique/PanneauD.java" line="53" class="Graphique.PanneauD" package="Graphique">
         <option name="ENABLED" value="true" />
@@ -100,7 +119,67 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/jeu2D/Jeux/Jeu.java" line="130" class="jeu2D.Jeux.Jeu" package="jeu2D.Jeux">
+      <breakpoint url="file://$PROJECT_DIR$/src/jeu2D/Jeux/Jeu.java" line="131" class="jeu2D.Jeux.Jeu" package="jeu2D.Jeux">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/jeu2D/Jeux/Jeu.java" line="201" class="jeu2D.Jeux.Jeu" package="jeu2D.Jeux">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/jeu2D/Jeux/Jeu.java" line="205" class="jeu2D.Jeux.Jeu" package="jeu2D.Jeux">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/jeu2D/Jeux/Jeu.java" line="211" class="jeu2D.Jeux.Jeu" package="jeu2D.Jeux">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/jeu2D/Jeux/Jeu.java" line="215" class="jeu2D.Jeux.Jeu" package="jeu2D.Jeux">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -124,7 +203,7 @@
     <favorites_list name="jeu2D" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49262792">
+    <splitter split-orientation="horizontal" split-proportion="0.44605622">
       <split-first>
         <leaf>
           <file leaf-file-name="Comparable.java" pinned="false" current="false" current-in-tab="false">
@@ -148,7 +227,7 @@
           <file leaf-file-name="GUI2D.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Graphique/GUI2D.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="18" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0" vertical-offset="197" max-vertical-offset="2822">
+                <state line="19" column="18" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="2822">
                   <folding />
                 </state>
               </provider>
@@ -181,10 +260,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="TabScore.java" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="TabScore.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Graphique/TabScore.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="1" selection-start="342" selection-end="342" vertical-scroll-proportion="-0.1123348" vertical-offset="204" max-vertical-offset="1292">
+                <state line="27" column="0" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0" vertical-offset="313" max-vertical-offset="1292">
                   <folding />
                 </state>
               </provider>
@@ -199,10 +278,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="PanneauD.java" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="PanneauD.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Graphique/PanneauD.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="61" column="0" selection-start="1676" selection-end="1676" vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="1904">
+                <state line="53" column="0" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.16028708" vertical-offset="800" max-vertical-offset="1870">
                   <folding />
                 </state>
               </provider>
@@ -239,10 +318,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Jeu.java" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="Jeu.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/jeu2D/Jeux/Jeu.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="207" column="12" selection-start="5251" selection-end="5251" vertical-scroll-proportion="0.49052632" vertical-offset="3031" max-vertical-offset="3621">
+                <state line="53" column="7" selection-start="1118" selection-end="1118" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="3978">
                   <folding />
                 </state>
               </provider>
@@ -257,10 +336,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="IStrategie.java" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="IStrategie.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/jeu2D/Jeux/IStrategie.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="0" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="612">
+                <state line="45" column="54" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.640592" vertical-offset="309" max-vertical-offset="782">
                   <folding />
                 </state>
               </provider>
@@ -332,6 +411,7 @@
         <option value="$PROJECT_DIR$/src/Graphique/PanneauD.java" />
         <option value="$PROJECT_DIR$/src/Graphique/GUI2D.java" />
         <option value="$PROJECT_DIR$/src/jeu2D/Jeux/Jeu.java" />
+        <option value="$PROJECT_DIR$/src/jeu2D/Jeux/IStrategie.java" />
       </list>
     </option>
   </component>
@@ -479,8 +559,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1004,7 +1084,9 @@
       <workItem from="1394207180486" duration="6618000" />
       <workItem from="1394216464179" duration="2441000" />
       <workItem from="1394231350508" duration="1312000" />
-      <workItem from="1394251106511" duration="17000" />
+      <workItem from="1394251106511" duration="127000" />
+      <workItem from="1394493884536" duration="1343000" />
+      <workItem from="1394645444871" duration="4253000" />
     </task>
     <task id="LOCAL-00001" summary="Modification structure + template method">
       <created>1393426439573</created>
@@ -1082,11 +1164,15 @@
       <created>1394217029228</created>
       <updated>1394217029228</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Yeah">
+      <created>1394251165990</created>
+      <updated>1394251165990</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80461000" />
+    <option name="totallyTimeSpent" value="86167000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1110,7 +1196,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1119,27 +1205,27 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.503268" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15309446" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13149351" sideWeight="0.32854986" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15309446" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2630719" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22222222" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28267974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12839879" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13235295" sideWeight="0.67145014" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16691843" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13192183" sideWeight="0.67145014" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.093406595" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22222222" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1173,7 +1259,8 @@
     <MESSAGE value="Refactor name Jeu -&gt; IStrategie + interface&#10;Bunco -&gt; Jeu" />
     <MESSAGE value="Intégration de l'interface&#10;(Bouton grisé quand nbrtour &gt;=6)" />
     <MESSAGE value="Les dés s'étaient encore barré" />
-    <option name="LAST_COMMIT_MESSAGE" value="Les dés s'étaient encore barré" />
+    <MESSAGE value="Yeah" />
+    <option name="LAST_COMMIT_MESSAGE" value="Yeah" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1586,13 +1673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jeu2D/Jeux/IStrategie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/jeu2D/Joueur.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="28" selection-start="1201" selection-end="1201" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="2261">
@@ -1614,13 +1694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graphique/PanneauD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="0" selection-start="1676" selection-end="1676" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1870">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Graphique/Menu2D.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="11" selection-start="889" selection-end="889" vertical-scroll-proportion="0.0" vertical-offset="456" max-vertical-offset="850">
@@ -1637,14 +1710,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Graphique/TabScore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="1" selection-start="342" selection-end="342" vertical-scroll-proportion="-0.1123348" vertical-offset="204" max-vertical-offset="1292">
+        <state line="27" column="0" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0" vertical-offset="313" max-vertical-offset="1292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graphique/PanneauD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="0" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.16028708" vertical-offset="800" max-vertical-offset="1870">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jeu2D/Jeux/Jeu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="207" column="12" selection-start="5251" selection-end="5251" vertical-scroll-proportion="0.49052632" vertical-offset="3031" max-vertical-offset="3621">
+        <state line="53" column="7" selection-start="1118" selection-end="1118" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="3978">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jeu2D/Jeux/IStrategie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="54" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.640592" vertical-offset="309" max-vertical-offset="782">
           <folding />
         </state>
       </provider>

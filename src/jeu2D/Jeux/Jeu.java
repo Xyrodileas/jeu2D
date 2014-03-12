@@ -127,17 +127,14 @@ public class Jeu implements IStrategie {
 				tab[index] = d;
 				index++;
 			}
+            int bunco = resultatBunco(tab, nbrTours);
 			// Si on a 3 nombres égales, on va vérifier si c'est un brunco
-			if (tab[0].compare(tab[1], tab[2]) == 1) {
-				// Si c'est un brunco, on ajout 21 points au joueur
-				if (tab[0].compareTo(nbrTours) == 1) {
-
-					score += 21;
+			if (bunco > 0) {
+				// Si on a 3 dés identiques, on va ajouter des points
+					score += bunco;
+                if(bunco == 21) // Si on a obtenu un bunco
 					break; // On stop la boucle des essais
-				} else
-					// Si c'est n'est pas un brunco, mais qu'on possède 3
-					// nombres identiques, on ajoute +5
-					score += 5;
+
 			} else { // Sinon, on vérifie simplement s'il y a des points à
 						// ajouer
 				int sansbrunco = resultatSansBrunco(tab);
@@ -194,6 +191,30 @@ public class Jeu implements IStrategie {
 		return score;
 
 	}
+    /**
+     * Méthode vérifiant le nombre de points supplémentaire à ajouter
+     *
+     * @param lancers
+     * @return le nouveau score
+     */
+    public int resultatBunco(De[] lancers, int tour){
+        // Si on a 3 nombres égales, on va vérifier si c'est un brunco
+        if (lancers[0].compare(lancers[1], lancers[2]) == 1) {
+            // Si c'est un brunco, on ajout 21 points au joueur
+            if (lancers[0].compareTo(tour) == 1) {
+
+                return 21;
+
+            }
+            else{
+                // Si c'est n'est pas un brunco, mais qu'on possède 3
+                // nombres identiques, on ajoute +5
+                return 5;
+            }
+        }
+        else
+            return 0;
+    }
 
 	/**
 	 * Méthode permettant de calculer le vainqueur
