@@ -80,7 +80,7 @@ public class GUI2D extends JFrame{
 	    
 	    
 	    public void reinitialiserTout(){
-            jeu.resetBrunco();
+            jeu.resetBunco();
 	    	tabScore.reinitialiserTableau();
 
 	    	panneauD.reinitialiserBoutonNull();

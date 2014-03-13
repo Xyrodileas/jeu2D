@@ -83,7 +83,7 @@ public class Jeu implements IStrategie {
 		for (Joueur i : ListeJoueurs) {
 			System.out.println("\n" + i.getNom() + ": ");
 			// Appelle de la méthode ToursBanco
-			int score = ToursBrunco(i);
+			int score = ToursBunco(i);
 			// On va ensuite ajouter le résultat au score du joueur
 			System.out.println("\nScore du Tours : " + score + "\n");
 			i.ajouterScore(score);
@@ -105,7 +105,7 @@ public class Jeu implements IStrategie {
 	 *            On simule le tour sur ce joueur
 	 * @return le score du joueur passé en paramètre
 	 */
-	public int ToursBrunco(Joueur leJoueur) {
+	public int ToursBunco(Joueur leJoueur) {
 
 		int[] resultat;
 
@@ -137,7 +137,7 @@ public class Jeu implements IStrategie {
 
 			} else { // Sinon, on vérifie simplement s'il y a des points à
 						// ajouer
-				int sansbrunco = resultatSansBrunco(tab);
+				int sansbrunco = resultatSansBunco(tab);
 				if (sansbrunco == 0) {
 					break;
 				} else
@@ -178,7 +178,7 @@ public class Jeu implements IStrategie {
 	 * @param lancers
 	 * @return le nouveau score
 	 */
-	public int resultatSansBrunco(De[] lancers) {
+	public int resultatSansBunco(De[] lancers) {
 		int score = 0;
 		// Si le lancé executé du dé correspond au numéro du tour, on ajoute un
 		// point
@@ -233,7 +233,7 @@ public class Jeu implements IStrategie {
 	/**
 	 * Permet de mettre à zéro le brunco
 	 */
-	public void resetBrunco() {
+	public void resetBunco() {
 		this.ListeJoueurs.resetScore();
         this.nbrTours = 0;
 	}

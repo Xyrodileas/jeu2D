@@ -35,9 +35,9 @@ public class JeuTest extends TestCase {
 			LancersDe[x].LancerDe();
 		}
 
-		Assert.assertTrue(jeuTest.resultatSansBrunco(LancersDe) == 0
-				|| jeuTest.resultatSansBrunco(LancersDe) == 1
-				|| jeuTest.resultatSansBrunco(LancersDe) == 2); // On test si le
+		Assert.assertTrue(jeuTest.resultatSansBunco(LancersDe) == 0
+				|| jeuTest.resultatSansBunco(LancersDe) == 1
+				|| jeuTest.resultatSansBunco(LancersDe) == 2); // On test si le
 																// score
 																// correspondant
 																// au lancé de

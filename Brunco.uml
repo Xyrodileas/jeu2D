@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="178.25" y="782.0">jeu2D.Jeux.Bunco</node>
+    <node x="69.0" y="541.0">jeu2D.Jeux.Jeu</node>
+    <node x="302.0" y="0.0">jeu2D.CollectionDes</node>
+    <node x="285.0" y="221.0">jeu2D.Joueur</node>
+    <node x="" y="">jeu2D.FabriqueJoueur</node>
+    <node x="661.8333333333333" y="501.0">jeu2D.De</node>
+    <node x="0.0" y="251.0">jeu2D.CollectionJoueur</node>
+    <node x="823.8333333333333" y="843.0">jeu2D.FabriqueDe</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="jeu2D.Joueur" target="jeu2D.CollectionDes">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="jeu2D.Jeux.Bunco" target="jeu2D.Jeux.Jeu">
+      <point x="-63.75" y="-105.0" />
+      <point x="0.0" y="75.5" />
+    </edge>
+    <edge source="jeu2D.Jeux.Jeu" target="jeu2D.CollectionJoueur">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="jeu2D.FabriqueJoueur" target="jeu2D.Joueur">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="jeu2D.FabriqueDe" target="jeu2D.De">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="jeu2D.Jeux.Bunco" target="jeu2D.De">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="jeu2D.Jeux.Jeu" target="jeu2D.Joueur">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9944664031620553" x="499.0" y="626.829093799682" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

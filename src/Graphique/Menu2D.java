@@ -31,7 +31,7 @@ public class Menu2D extends JMenuBar{
 		    			public void actionPerformed(ActionEvent arg0) {
 		    				System.out.println("REINITIALISER BRUNCO");
 
-                            frame.jeu.resetBrunco();
+                            frame.jeu.resetBunco();
 
 		    				frame.reinitialiserTout();
 		    				frame.rafraichirTableauGraphiqueJoueur();
